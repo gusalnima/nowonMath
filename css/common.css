@@ -32,18 +32,18 @@
 @font-face {
   font-family: 'nanumsquare'; 
   font-weight:normal;
-  src: url(../font/nanumsquare.eot);
+  src: url(../font/nanumsquarer.eot);
   src: local('※'), url(../font/nanumsquarer.eot?#iefix) format('embedded-opentype'),
        url(../font/nanumsquarer.woff) format('woff'),
      url(../font/nanumsquarer.woff2) format('woff');
 }
 
 @font-face {
-  font-family: 'nanumsquare';
+  font-family: 'nanumsquareb';
   font-weight:bold;
-  src: url(../font/NanumSquareEB.eot);
-  src: local('※'), url(../font/NanumSquareEB.eot?#iefix) format('embedded-opentype'),
-       url(../font/NanumSquareEB.woff) format('woff');
+  src: url(../font/nanumsquareb.eot);
+  src: local('※'), url(../font/nanumsquareb.eot?#iefix) format('embedded-opentype'),
+       url(../font/nanumsquareb.woff) format('woff');
 }
 
 @font-face {
@@ -54,14 +54,7 @@
        url(../font/NanumSquareEB.woff) format('woff');
 }
 
-@font-face {
-  font-family: 'Nanum Gothic';
-  font-style: normal;
-  font-weight: 400;
-  src: url(../font/NanumGothic.eot);
-  src: url(../font/NanumGothic.eot?#iefix) format('embedded-opentype'),
-       url(../font/NanumGothic.ttf) format('truetype');
-}
+
 
 
 /* 
@@ -110,8 +103,8 @@
        url(../font/NanumGothicExtraBold.ttf) format('truetype');
 } */
 
-body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select, pre {
-  -webkit-text-size-adjust:none; font-size:14px; letter-spacing: -0.02em; font-weight:normal; color:#393939; font-family:'nanumsquare' ,'Nanum Gothic', '맑은 고딕','Nanum Gothic', "Apple SD Gothic Neo", sans-serif, Arial,dotum,'돋움';
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd,div, table, th, td, form, fieldset, legend, input, textarea, button, select, pre {
+  -webkit-text-size-adjust:none; font-size:14px; letter-spacing: -0.02em; font-weight:normal; color:#393939; font-family:'nanumsquare', '맑은 고딕','Nanum Gothic', "Apple SD Gothic Neo", sans-serif, Arial,dotum,'돋움';
   box-sizing: border-box;
 } 
 

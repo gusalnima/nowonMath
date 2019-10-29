@@ -22,7 +22,7 @@ jQuery(document).ready(function() {
         // $mglo.stop().animate({'top': '51px'}, 500, "easeOutExpo",function(){
         // });
         //jQuery('#wrap').css({'position':'fixed','top':'54px'});
-        $mMenu.css({ display: "block", position: "absolute", top: "58px" });
+        $mMenu.css({ display: "block", position: "absolute", top: "59px" });
         $mMenu.stop().animate({ left: "0px" }, 500, "easeOutExpo", function() {
           //$mMenu.css({'display':'none'});
         });
@@ -48,20 +48,20 @@ jQuery(document).ready(function() {
     //web menu
     jQuery(".gnb").gnb_js();
     var $gnbDep2 = jQuery(".gnb .dep2");
-    jQuery(".gnb").mouseenter(function() {
+    jQuery(".gnb, .gnb_bg").mouseenter(function() {
       jQuery(".gnb_bg").css("display", "block");
       $gnbDep2.css("display", "block");
 
       jQuery(".gnb_bg")
         .stop()
-        .animate({ height: "420px" }, 300, "easeOutExpo", function() {});
+        .animate({ height: "49px" }, 300, "easeOutExpo", function() {});
       $gnbDep2
         .stop()
-        .animate({ height: "420px" }, 300, "easeOutExpo", function() {});
+        .animate({ height: "49px" }, 300, "easeOutExpo", function() {});
       // $gnbDep2.stop().animate({'opacity': '1'}, 500, "easeOutExpo", function() {
       // });
     });
-    jQuery(".gnb").mouseleave(function() {
+    jQuery(".gnb, .gnb_bg").mouseleave(function() {
       jQuery(".gnb_bg")
         .stop()
         .animate({ height: "0" }, 500, "easeOutExpo", function() {});
@@ -356,5 +356,5 @@ jQuery.fn.mobile_js = function() {
     GNB();
   }
 
-  //setTopNaviCurrentDepth();
+  setTopNaviCurrentDepth();
 };

@@ -37,10 +37,10 @@
 		if(!navigator.userAgent.match(/Android|Mobile|iP(hone|od|ad)|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/)){
 		} else {
 		}
-		jQuery('.all_menu_wrap').sy_modalApi(); // 전체메뉴 중앙 팝업
+		//jQuery('.all_menu_wrap').sy_modalApi(); // 전체메뉴 중앙 팝업
 		jQuery('.m_btm_link').imgOverApi(); //이미지 over
 		//언어
-		jQuery('.top_util_link .t3').toggleJs();
+		// jQuery('.top_util_link .t3').toggleJs();
 
 
 	});
@@ -54,295 +54,204 @@
 <body>
 	<div id="wrap">		
 		<div id="header_wrap">
-			<div class="header_util">
-				<div class="wsize">
-					<div class="msize">
-						<ul class="top_util_icon">
-							<li><a href="#"><img src="../img/common/top_util_1.gif" alt="blog"></a></li>
-							<li><a href="#"><img src="../img/common/top_util_2.gif" alt="facebook"></a></li>
-							<li><a href="#"><img src="../img/common/top_util_3.gif" alt="yutube"></a></li>
-						</ul>
-						<div class="top_util_link">
-							<p class="t1"><a href="#">현대위아 공작기계 바로가기<span>&nbsp;</span></a></p>
-							<p class="t2"><a href="#">고객지원</a></p>
-							<p class="t3"><a href="#">Language<span class="arr">&nbsp;</span></a></p>
-							<ul class="top_tog_list lang_list">
-								<li><a href="#">Global / English</a></li>
-								<li><a href="#">Korea / 한국어</a></li>
-								<li><a href="#">China / <span class="nanum">中文</span></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
 			<div class="header">
 				<div class="wsize">
 					<div class="msize">
+						<div class="top_util_link">
+							<p class="t1"><a href="#">로그인</a></p>
+							<p class="t2"><a href="#">회원가입</a></p>
+							<p class="t3"><a href="#">고객센터</a></p>
+						</div>
 						<div class="gnb_wrap">
-							<h1 class="logo"><a href="#"><img src="../img/common/logo.jpg" alt="HYUNDAI WIA"></a></h1>
+							<h1 class="logo"><a href="#"><img src="../img/logo.png" alt="노원 수학 문화관"></a></h1>
 							<!-- 
 								메뉴 클릭했을때.. <div class="gnb active">
 							-->
 							<div class="gnb">
 								<ul class="dep1">
-									<li class="d1 d1a"><a href="javascript://">회사소개</a>
+									<li class="d1 d1a"><a href="javascript://">관람안내</a>
 										<div class="dep2 dep2_1">
-											<p><img src="../img/common/menu_ico_1.png"></p>
 											<ul>
-												<li class="d2 tit">회사소개</li>
-												<li class="d2"><a href="#">개요</a></li>
-												<li class="d2"><a href="#">경영이념</a></li>
-												<li class="d2"><a href="#">CEO 인사말</a></li>
-												<li class="d2"><a href="#">CI</a></li>
-												<li class="d2"><a href="#">연혁</a></li>
-												<li class="d2"><a href="#">사업장 안내</a></li>
+												<li class="d2"><a href="#">이용안내</a></li>
+												<li class="d2"><a href="#">층별안내</a></li>
+												<li class="d2"><a href="#">시설안내</a></li>
+												<li class="d2"><a href="#">대관안내</a></li>
+												<li class="d2"><a href="#">주차안내</a></li>
+												<li class="d2"><a href="#">관람예약</a></li>
 											</ul>
 										</div>
 									</li>
-									<li class="d1 d1a"><a href="javascript://">사업소개</a>
+									<li class="d1 d1a"><a href="javascript://">전시안내</a>
 										<div class="dep2 dep2_2">
-											<p><img src="../img/common/menu_ico_2.png"></p>
 											<ul>
-												<li class="d2 tit">사업소개</li>
-												<li class="d2"><a href="#">공작기계</a></li>
-												<li class="d2"><a href="#">차량부품</a></li>
-												<li class="d2"><a href="#">산업기계</a></li>
-												<li class="d2"><a href="#">방위산업</a></li>
-												<li class="d2"><a href="#">연구개발</a></li>
-												<li class="d2"><a href="#">신제품</a></li>
+												<li class="d2"><a href="#">전시종합안내</a></li>
+												<li class="d2"><a href="#">기획전시공간(1층)</a></li>
+												<li class="d2"><a href="#">수학놀이터(1층)</a></li>
+												<li class="d2"><a href="#">수학과 세상(2층)</a></li>
+												<li class="d2"><a href="#">수학과 예술(3층)</a></li>
+												<li class="d2"><a href="#">야외</a></li>
 											</ul>
 										</div>
 									</li>
-									<li class="d1 d1a"><a href="javascript://">투자정보</a>
+									<li class="d1 d1a"><a href="javascript://">교육 및 행사</a>
 										<div class="dep2 dep2_3">
-											<p><img src="../img/common/menu_ico_3.png"></p>
 											<ul>
-												<li class="d2 tit">투자정보</li>
-												<li class="d2"><a href="#">회사정보</a></li>
-												<li class="d2"><a href="#">재무정보</a></li>
-												<li class="d2"><a href="#">IR 정보</a></li>
-												<li class="d2"><a href="#">전자공고</a></li>
-												<li class="d2"><a href="#">주식정보</a></li>
-												<li class="d2"><a href="#">공시자료</a></li>
+												<li class="d2"><a href="#">수학교육프로그램</a></li>
+												<li class="d2"><a href="#">수학문화행사</a></li>
+												<li class="d2"><a href="#">수학봉사 서포터즈</a></li>
 											</ul>
 										</div>
 									</li>
-									<li class="d1 d1a"><a href="javascript://">지속가능경영</a>
+									<li class="d1 d1a"><a href="javascript://">매스휴먼북</a>
 										<div class="dep2 dep2_4">
-											<p><img src="../img/common/menu_ico_4.png"></p>
 											<ul >
-												<li class="d2 tit">지속가능경영</li>
-												<li class="d2"><a href="#">사회공헌</a></li>
-												<li class="d2"><a href="#">동반성장</a></li>
-												<li class="d2"><a href="#">윤리경영</a></li>
-												<li class="d2"><a href="#">공정거래자율준수<br/>프로그램</a></li>
-												<li class="d2"><a href="#">안전경영</a></li>
-												<li class="d2"><a href="#">환경경영</a></li>
-												<li class="d2"><a href="#">품질경영</a></li>
+												<li class="d2"><a href="#">참가 신청</a></li>
+												<li class="d2"><a href="#">개설 신청</a></li>
+												<li class="d2"><a href="#">강사 등록</a></li>
 											</ul>
 										</div>
 									</li>
-									<li class="d1 d1a"><a href="javascript://">PR센터</a>
+									<li class="d1 d1a"><a href="javascript://">소통마당</a>
 										<div class="dep2 dep2_5">
-											<p><img src="../img/common/menu_ico_5.png"></p>
 											<ul>
-												<li class="d2 tit">PR센터</li>
-												<li class="d2"><a href="#">뉴스</a></li>
-												<li class="d2"><a href="#">소셜미디어</a></li>
-												<li class="d2"><a href="#">e 콘텐츠</a></li>
-												<li class="d2"><a href="#">PR 자료실</a></li>
+												<li class="d2"><a href="#">공지사항</a></li>
+												<li class="d2"><a href="#">뉴스 및 소식</a></li>
+												<li class="d2"><a href="#">Q & A</a></li>
+												<li class="d2"><a href="#">자료실</a></li>
+												<li class="d2"><a href="#">소식지</a></li>
 											</ul>
 										</div>
 									</li>
-									<li class="d1 d1a"><a href="javascript://">고객지원</a>
+									<li class="d1 d1a"><a href="javascript://">열린시설</a>
 										<div class="dep2 dep2_6">
-											<p><img src="../img/common/menu_ico_6.png"></p>
 											<ul>
-												<li class="d2 tit">고객지원</li>
-												<li class="d2"><a href="#">자주하는 질문</a></li>
-												<li class="d2"><a href="#">질문하기</a></li>
-												<li class="d2"><a href="#">대리점&서비스 안내</a></li>
-												<li class="d2"><a href="#">공장견학</a></li>
+												<li class="d2"><a href="#">드라이시네마(영화관)</a></li>
+												<li class="d2"><a href="#">시그마자료실(도서관)</a></li>
+												<li class="d2"><a href="#">트라이교구판매샵</a></li>
+												<li class="d2"><a href="#">카페테리아</a></li>
 											</ul>
 										</div>
 									</li>
-									<li class="d1a"><a href="javascript://">인재채용</a></li>
+									<li class="d1 d1a"><a href="javascript://">수학문화관 소개</a>
+										<div class="dep2 dep2_7">
+											<ul>
+												<li class="d2"><a href="#">인사말</a></li>
+												<li class="d2"><a href="#">일반현황</a></li>
+												<li class="d2"><a href="#">조직도</a></li>
+												<li class="d2"><a href="#">찾아오시는 길</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="d1 d1a"><a href="javascript://">서비스정책</a>
+										<div class="dep2 dep2_8">
+											<ul>
+												<li class="d2"><a href="#">이용약관</a></li>
+												<li class="d2"><a href="#">개인정보처리방침</a></li>
+												<li class="d2"><a href="#">법적고지</a></li>
+											</ul>
+										</div>
+									</li>
 								</ul>
 							</div>
-							<div class="gnb_bg">&nbsp;</div>
 							<p class="ico_menu jQMenu"><a href="javascript://"><img src="../img/common/ico_menu.png" alt="메뉴"></a></p>
 						</div><!--gnb_wrap-->
 					</div>
 				</div>
+				<div class="gnb_bg">&nbsp;</div>
 			</div>
-			<!-- mgnb -->
-			<div class="mgnb_wrap" style="display:none">
-				<div class="mgnb">
-					<p class="home_btn">
-						<span><a href="/kr/">HOME</a></span>
-						<span><a href="/en/">ENGLISH</a></span>
-					</p>
-					<ul class="dep1">
-						<li class="d1">
-							<a href="#" class="active">제품<span class="more">더보기</span></a>
-							<div class="dep2_wrap" style="display: block;">
-								<ul class="dep2">
-									<li class="d2">
-										<a href="#">신제품소개<span class="more">더보기</span></a>
-										<ul class="dep3" style="">
-											<li class="d3"><a href="#">KIT4500</a></li>
-											<li class="d3"><a href="#">XF6300</a></li>
-											<li class="d3"><a href="#">KF4600</a></li>
-										    <li class="d3"><a href="#">KL6500AW</a></li>
-											<li class="d3"><a href="#">L2000LSY</a></li>
-											<li class="d3"><a href="#">i-CUT400TD</a></li>
-										</ul>
-									</li>
-									<li class="d2"><a href="#">제품라인업</a></li>
-									<li class="d2">
-										<a href="#">터닝센터<span class="more">더보기</span></a>
-										<ul class="dep3" style="">
-											<li class="d3"><a href="#">수평컴팩트</a></li>
-											<li class="d3"><a href="#">수평고성능</a></li>
-											<li class="d3"><a href="#">정면</a></li>
-											<li class="d3"><a href="#">수직</a></li>
-											<li class="d3"><a href="#">복합다축</a></li>
-											<li class="d3"><a href="#">알미늄 휠 가공</a></li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-						</li>
-						<li class="d1">
-							<a href="#">공장자동화<span class="more">더보기</span></a>
-							<div class="dep2_wrap">
-								<ul class="dep2">
-									<li class="d2"><a href="#">가공자동화</a></li>
-									<li class="d2"><a href="#">가공기(라인센터)</a></li>
-									<li class="d2"><a href="#">조립자동화라인</a></li>
-									<!-- <li class="d2"><a href="/kr/fa/robot_series_01.asp">로봇 시리즈</a></li> -->
-									<li class="d2"><a href="#">로봇&amp;지그 시스템</a></li>
-								</ul>
-							</div>
-						</li>
-						<li class="d1">
-							<a href="#">이벤트</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			
 		</div> <!-- header -->
-			<div id="footer_wrap">
-				<div class="foot_link_wrap">
-					<div class="family_link_wrap">
-						<a class="close_btn jQFamily_close_btn" href="javascript://"><img src="../img/common/foot_link_close.png" alt="닫기"></a>
-						<div class="wsize">
-							<div class="msize">
-								<p class="f_tit">HYUNDAI WIA LINK</p>
-								<div class="family_menu">
-									<ul class="dep1">
-										<li class="d1"><a href="javascript://">회사소개</a>
-											<div class="dep2_wrap">
-												<ul class="dep2">
-													<li class="d2"><a href="#">현대위아 그룹웨어</a></li>
-													<li class="d2"><a href="#">AONE<br class="mnone"/>(통합구매시스템)</a></li>
-													<li class="d2"><a href="#">VAATZ </a></li>
-													<li class="d2"><a href="#">방문예약시스템</a></li>
-												</ul>
-											</div>
-										</li>
-										<li class="d1"><a href="javascript://">자동차 제조</a>
-											<div class="dep2_wrap">
-												<ul class="dep2">
-													<li class="d2"><a href="#">현대자동차</a></li>
-													<li class="d2"><a href="#">기아자동차</a></li>
-												</ul>
-											</div>
-										</li>
-										<li class="d1"><a href="javascript://">자동차 부품제조</a>
-											<div class="dep2_wrap">
-												<ul class="dep2">
-													<li class="d2"><a href="#">현대모비스</a></li>
-													<li class="d2"><a href="#">현대파워텍</a></li>
-													<li class="d2"><a href="#">현대다이모스</a></li>
-													<li class="d2"><a href="#">현대케피코</a></li>
-													<li class="d2"><a href="#">현대오트론</a></li>
-													<li class="d2"><a href="#">현대엠엔소프트</a></li>
-													<li class="d2"><a href="#">현대파텍스</a></li>
-													<li class="d2"><a href="#">현대IHL</a></li>
-													<li class="d2"><a href="#">현대엠시트</a></li>
-												</ul>
-											</div>
-										</li>
-										<li class="d1"><a href="javascript://">철강</a>
-											<div class="dep2_wrap">
-												<ul class="dep2">
-													<li class="d2"><a href="#">현대제철</a></li>
-													<li class="d2"><a href="#">현대비엔지스틸</a></li>
-												</ul>
-											</div>
-										</li>
-										<li class="d1"><a href="javascript://">건설</a>
-											<div class="dep2_wrap">
-												<ul class="dep2">
-													<li class="d2"><a href="#">현대건설</a></li>
-													<li class="d2"><a href="#">현대스틸산업</a></li>
-													<li class="d2"><a href="#">현대엔지니어링</a></li>
-													<li class="d2"><a href="#">현대도시개발</a></li>
-													<li class="d2"><a href="#">현대종합설계</a></li>
-												</ul>
-											</div>
-										</li>
-										<li class="d1"><a href="javascript://">금융</a>
-											<div class="dep2_wrap">
-												<ul class="dep2">
-													<li class="d2"><a href="#">현대카드</a></li>
-													<li class="d2"><a href="#">현대캐피탈</a></li>
-													<li class="d2"><a href="#">HMC투자증권</a></li>
-													<li class="d2"><a href="#">현대커머셜</a></li>
-													<li class="d2"><a href="#">현대라이프</a></li>
-												</ul>
-											</div>
-										</li>
-										<li class="d1"><a href="javascript://">운송 / IT / 서비스</a>
-											<div class="dep2_wrap">
-												<ul class="dep2">
-													<li class="d2"><a href="#">현대로템</a></li>
-													<li class="d2"><a href="#">현대글로비스</a></li>
-													<li class="d2"><a href="#">현대오토에버</a></li>
-													<li class="d2"><a href="#">이노션</a></li>
-													<li class="d2"><a href="#">현대엔지비</a></li>
-													<li class="d2"><a href="#">현대씨엔아이</a></li>
-													<li class="d2"><a href="#">해비치호텔앤리조트</a></li>
-													<li class="d2"><a href="#">현대서산농장</a></li>
-												</ul>
-											</div>
-										</li>
-										<li class="d1"><a href="javascript://">현대자동차 그룹</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>	
+		<div id="contentWrap">
+				<div class="wsize">
+					<div>
+						<img src="../img/main_visual.jpg" alt="">
 					</div>
-					<div class="wsize">
-						<div class="msize">
-							<div class="foot_links">
-								<p class="t1"><a href="#">HYUNDAI WIA MACHINE TOOL</a></p>
-								<p class="t2"><a href="javascript://" class="jQFamily_btn">HYUNDAI WIA LINK</a></p>
+					<div class="msize">
+						<div class="recom_wrap">
+							<div class="recom_tit">
+								<p>추천전시물</p>	
 							</div>
-							<div class="foot_social_num">
-								<p>공작기계 콜센터 <a href="tel:1588-9685">1588-9685</a></p>
-								<p><a href="#"><img src="../img/common/ico_social_1.png" alt="blog"></a></p>
-								<p><a href="#"><img src="../img/common/ico_social_2.png" alt="facebook"></a></p>
-								<p><a href="#"><img src="../img/common/ico_social_3.png" alt="yutube"></a></p>
+							<div class="recom_cont">
+								<div class="recom_box">
+										<div class="gallSlider">
+											<div class="slide_cont">
+												<a href="#"><p class="img"><img src="../img/sample_img_1.jpg" alt=""></p>
+												<div class="txts">
+													<p class="t1">올록볼록 | 수블록</p>
+													<p class="t2">미션 카드에 제시된 문제를 보고, 수 배열표의 수 블록을 앞으로 당기면서 수의 배열과 규칙에 대한 개념을 이해한다.</p>
+												</div></a>
+												<a href="#" class="more"><img src="../img/ico_banner_more.png" alt=""></a>
+											</div>
+											<div class="slide_cont">
+													<a href="#"><p class="img"><img src="../img/sample_img_1.jpg" alt=""></p>
+												<div class="txts">
+													<p class="t1">올록볼록 | 수블록</p>
+													<p class="t2">미션 카드에 제시된 문제를 보고, 수 배열표의 수 블록을 앞으로 당기면서 수의 배열과 규칙에 대한 개념을 이해한다.</p>
+												</div></a>
+												<a href="#" class="more"><img src="../img/ico_banner_more.png" alt=""></a>
+											</div>
+											<div class="slide_cont">
+													<a href="#"><p class="img"><img src="../img/sample_img_1.jpg" alt=""></p>
+													<div class="txts">
+														<p class="t1">올록볼록 | 수블록</p>
+														<p class="t2">미션 카드에 제시된 문제를 보고, 수 배열표의 수 블록을 앞으로 당기면서 수의 배열과 규칙에 대한 개념을 이해한다.</p>
+													</div></a>
+													<a href="#" class="more"><img src="../img/ico_banner_more.png" alt=""></a>
+												</div>
+												<div class="slide_cont">
+														<a href="#"><p class="img"><img src="../img/sample_img_1.jpg" alt=""></p>
+														<div class="txts">
+															<p class="t1">올록볼록 | 수블록</p>
+															<p class="t2">미션 카드에 제시된 문제를 보고, 수 배열표의 수 블록을 앞으로 당기면서 수의 배열과 규칙에 대한 개념을 이해한다.</p>
+														</div></a>
+														<a href="#" class="more"><img src="../img/ico_banner_more.png" alt=""></a>
+													</div>
+													<div class="slide_cont">
+															<a href="#"><p class="img"><img src="../img/sample_img_1.jpg" alt=""></p>
+															<div class="txts">
+																<p class="t1">올록볼록 | 수블록</p>
+																<p class="t2">미션 카드에 제시된 문제를 보고, 수 배열표의 수 블록을 앞으로 당기면서 수의 배열과 규칙에 대한 개념을 이해한다.</p>
+															</div></a>
+															<a href="#" class="more"><img src="../img/ico_banner_more.png" alt=""></a>
+														</div>
+										</div>
+								</div>
+								<script>
+									$('.gallSlider').bxSlider({
+										auto: true,
+										autoControls: true,
+										stopAutoOnClick: true,
+										pager: true,
+										maxSlides:4,
+										moveSlides:1,
+										infiniteLoop:false,
+										slideMargin:40,
+										slideWidth: 220
+										});	
+								</script>
 							</div>
 						</div>
+
+						<div class="book_wrap">
+								<div class="book_tit">
+									<p>매스휴먼북</p>	
+								</div>
+								<div class="book_cont">
+									<div class="book_box">
+										<p class="t1">이벤트</p>
+										<p class="t2">우리 주변을 잘관찰해 보아요.<br/>세모네모사물 찾기 사진 공모전<br/>기간 : 2019. 10. 20 ~ 11. 30<br/>
+											참여방법:<br/>
+											자유롭게 찍은 사진을 이메일로 보내주세요.</p>
+									</div>
+								</div>
+							</div>
 					</div>
 				</div>
+		</div>
+			<div id="footer_wrap">
+				
 				<div class="wsize">
 					<div class="msize">
-						<h2><a href="#"><img src="../img/common/logo_foot.jpg" alt="HYUNDAI WIA"></a></h2>
+						<h2><a href="#"><img src="../img/foot_logo.png" alt=""></a></h2>
 						<div class="foots">
 							<p class="mb10">
 								<a href="#">사이버신문고</a>
@@ -398,175 +307,89 @@
 	<div class="all_menu_wrap">
 		<div class="all_menu">
 			<ul class="dep1">
-				<li class="d1"><a href="javascript://">회사소개</a>
-					<div class="dep2_wrap">
-						<ul class="dep2">
-							<li class="d2"><a href="#">개요</a></li>
-							<li class="d2"><a href="#">경영이념</a>
-								<ul class="dep3">
-									<li class="d3"><a href="#">경영철학</a></li>
-									<li class="d3"><a href="#">핵심가치</a></li>
-									<li class="d3"><a href="#">비전</a></li>
-								</ul>
-							</li>
-							<li class="d2"><a href="#">CEO 인사말</a></li>
-							<li class="d2"><a href="#">CI</a></li>
-							<li class="d2"><a href="#">연혁</a></li>
-							<li class="d2"><a href="#">사업장 안내</a>
-								<ul class="dep3">
-									<li class="d3"><a href="#">본사</a></li>
-									<li class="d3"><a href="#">연구소</a></li>
-									<li class="d3"><a href="#">국내생산거점</a></li>
-									<li class="d3"><a href="#">해외생산거점</a></li>
-									<li class="d3"><a href="#">국내영업거점</a></li>
-									<li class="d3"><a href="#">해외영업거점</a></li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</li>
-				<li class="d1"><a href="javascript://">사업소개</a>
-					<div class="dep2_wrap">
-						<ul class="dep2">
-							<li class="d2"><a href="#">공작기계</a>
-								<ul class="dep3">
-									<li class="d3"><a href="#">공작기계</a></li>
-									<li class="d3"><a href="#">자동화시스템</a></li>
-									<li class="d3"><a href="#">소프트웨어</a></li>
-								</ul>
-							</li>
-							<li class="d2"><a href="#">차량부품</a>
-								<ul class="dep3">
-									<li class="d3"><a href="#">엔진</a></li>
-									<li class="d3"><a href="#">모듈</a></li>
-									<li class="d3"><a href="#">구동부품</a></li>
-									<li class="d3"><a href="#">등속조인트</a></li>
-									<li class="d3"><a href="#">단조</a></li>
-									<li class="d3"><a href="#">주조</a></li>
-								</ul>
-							</li>
-							<li class="d2"><a href="#">산업기계</a>
-								<ul class="dep3">
-									<li class="d3"><a href="#">프레스</a></li>
-									<li class="d3"><a href="#">플랜트</a></li>
-								</ul>
-							</li>
-							<li class="d2"><a href="#">방위산업</a>
-								<ul class="dep3">
-									<li class="d3"><a href="#">육상</a></li>
-									<li class="d3"><a href="#">해상</a></li>
-									<li class="d3"><a href="#">항공</a></li>
-								</ul>
-							</li>
-							<li class="d2"><a href="#">연구개발</a>
-								<ul class="dep3">
-									<li class="d3"><a href="#">R&D분야</a></li>
-									<li class="d3"><a href="#">인증현황</a></li>
-								</ul>
-							</li>
-							<li class="d2"><a href="#">신제품</a></li>
-						</ul>
-					</div>
-				</li>
-				<li class="d1"><a href="javascript://">투자정보</a>
-					<div class="dep2_wrap">
-						<ul class="dep2">
-							<li class="d2"><a href="#">회사정보</a>
-								<ul class="dep3">
-									<li class="d3"><a href="#">회사개요</a></li>
-									<li class="d3"><a href="#">지배구조</a></li>
-									<li class="d3"><a href="#">신용등급</a></li>
-									<li class="d3"><a href="#">정관</a></li>
-								</ul>
-							</li>
-							<li class="d2"><a href="#">재무정보</a>
-								<ul class="dep3">
-									<li class="d3"><a href="#">재무현황</a></li>
-									<li class="d3"><a href="#">IR 보고서</a></li>
-								</ul>
-							</li>
-							<li class="d2"><a href="#">IR 정보</a>
-								<ul class="dep3">
-									<li class="d3"><a href="#">IR활동</a></li>
-									<li class="d3"><a href="#">경영실적</a></li>
-								</ul>
-							</li>
-							<li class="d2"><a href="#">전자공고</a></li>
-							<li class="d2"><a href="#">주식정보</a></li>
-							<li class="d2"><a href="#">공시자료</a></li>
-						</ul>
-					</div>
-				</li>
-				<li class="d1"><a href="javascript://">지속가능경영</a>
-					<div class="dep2_wrap">
-						<ul class="dep2">
-							<li class="d2"><a href="#">사회공헌</a>
-								<ul class="dep3">
-									<li class="d3"><a href="#">사회공헌 소개</a></li>
-									<li class="d3"><a href="#">사회공헌 프로그램</a></li>
-								</ul>
-							</li>
-							<li class="d2"><a href="#">동반성장</a>
-								<ul class="dep3">
-									<li class="d3"><a href="#">동반성장 소개</a></li>
-									<li class="d3"><a href="#">동반성장 프로그램</a></li>
-								</ul>
-							</li>
-							<li class="d2"><a href="#">윤리경영</a>
-								<ul class="dep3">
-									<li class="d3"><a href="#">윤리헌장</a></li>
-									<li class="d3"><a href="#">윤리실천강령</a></li>
-									<li class="d3"><a href="#">임직원윤리행동지침</a></li>
-									<li class="d3"><a href="#">구매총괄본부 윤리규정</a></li>
-								</ul>
-							</li>
-							<li class="d2"><a href="#">공정거래자율준수<br/>프로그램</a>
-								<ul class="dep3">
-									<li class="d3"><a href="#">공정거래자율준수 소개</a></li>
-									<li class="d3"><a href="#">자율준수 선언문/<br class="mnone"/>관리자제도</a></li>
-									<li class="d3"><a href="#">CP관련규정/자율준수</a></li>
-									<li class="d3"><a href="#">편람</a></li>
-								</ul>
-							</li>
-							<li class="d2"><a href="#">안전경영</a></li>
-							<li class="d2"><a href="#">환경경영</a></li>
-							<li class="d2"><a href="#">품질경영</a></li>
-						</ul>
-					</div>
-				</li>
-				<li class="d1"><a href="javascript://">PR센터</a>
-					<div class="dep2_wrap">
-						<ul class="dep2">
-							<li class="d2"><a href="#">뉴스</a>
-								<ul class="dep3">
-									<li class="d3"><a href="#">현대위아소식</a></li>
-									<li class="d3"><a href="#">보도자료</a></li>
-									<li class="d3"><a href="#">영상뉴스</a></li>
-								</ul>
-							</li>
-							<li class="d2"><a href="#">소셜미디어</a></li>
-							<li class="d2"><a href="#">e 콘텐츠</a></li>
-							<li class="d2"><a href="#">PR 자료실</a>
-								<ul class="dep3">
-									<li class="d3"><a href="#">광고</a></li>
-									<li class="d3"><a href="#">홍보영상</a></li>
-									<li class="d3"><a href="#">브로슈어</a></li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</li>
-				<li class="d1"><a href="javascript://">고객지원</a>
-					<div class="dep2_wrap">
-						<ul class="dep2">
-							<li class="d2"><a href="#">자주하는 질문</a></li>
-							<li class="d2"><a href="#">질문하기</a></li>
-							<li class="d2"><a href="#">대리점&서비스 안내</a></li>
-							<li class="d2"><a href="#">공장견학</a></li>
-						</ul>
-					</div>
-				</li>
-				<li class="d1"><a href="javascript://">인재채용</a></li>
+					<li class="d1 d1a"><a href="javascript://">관람안내</a>
+						<div class="dep2_wrap">
+							<ul class="dep2">
+								<li class="d2"><a href="#">이용안내</a></li>
+								<li class="d2"><a href="#">층별안내</a></li>
+								<li class="d2"><a href="#">시설안내</a></li>
+								<li class="d2"><a href="#">대관안내</a></li>
+								<li class="d2"><a href="#">주차안내</a></li>
+								<li class="d2"><a href="#">관람예약</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="d1 d1a"><a href="javascript://">전시안내</a>
+						<div class="dep2_wrap">
+								<ul class="dep2">
+								<li class="d2"><a href="#">전시종합안내</a></li>
+								<li class="d2"><a href="#">기획전시공간(1층)</a></li>
+								<li class="d2"><a href="#">수학놀이터(1층)</a></li>
+								<li class="d2"><a href="#">수학과 세상(2층)</a></li>
+								<li class="d2"><a href="#">수학과 예술(3층)</a></li>
+								<li class="d2"><a href="#">야외</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="d1 d1a"><a href="javascript://">교육 및 행사</a>
+						<div class="dep2_wrap">
+								<ul class="dep2">
+								<li class="d2"><a href="#">수학교육프로그램</a></li>
+								<li class="d2"><a href="#">수학문화행사</a></li>
+								<li class="d2"><a href="#">수학봉사 서포터즈</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="d1 d1a"><a href="javascript://">매스휴먼북</a>
+						<div class="dep2_wrap">
+								<ul class="dep2">
+								<li class="d2"><a href="#">참가 신청</a></li>
+								<li class="d2"><a href="#">개설 신청</a></li>
+								<li class="d2"><a href="#">강사 등록</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="d1 d1a"><a href="javascript://">소통마당</a>
+						<div class="dep2_wrap">
+								<ul class="dep2">
+								<li class="d2"><a href="#">공지사항</a></li>
+								<li class="d2"><a href="#">뉴스 및 소식</a></li>
+								<li class="d2"><a href="#">Q & A</a></li>
+								<li class="d2"><a href="#">자료실</a></li>
+								<li class="d2"><a href="#">소식지</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="d1 d1a"><a href="javascript://">열린시설</a>
+						<div class="dep2_wrap">
+								<ul class="dep2">
+								<li class="d2"><a href="#">드라이시네마(영화관)</a></li>
+								<li class="d2"><a href="#">시그마자료실(도서관)</a></li>
+								<li class="d2"><a href="#">트라이교구판매샵</a></li>
+								<li class="d2"><a href="#">카페테리아</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="d1 d1a"><a href="javascript://">수학문화관 소개</a>
+						<div class="dep2_wrap">
+								<ul class="dep2">
+								<li class="d2"><a href="#">인사말</a></li>
+								<li class="d2"><a href="#">일반현황</a></li>
+								<li class="d2"><a href="#">조직도</a></li>
+								<li class="d2"><a href="#">찾아오시는 길</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="d1 d1a"><a href="javascript://">서비스정책</a>
+						<div class="dep2_wrap">
+								<ul class="dep2">
+								<li class="d2"><a href="#">이용약관</a></li>
+								<li class="d2"><a href="#">개인정보처리방침</a></li>
+								<li class="d2"><a href="#">법적고지</a></li>
+							</ul>
+						</div>
+					</li>
+				
 			</ul>
 		</div>
 	</div>
