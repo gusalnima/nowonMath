@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+<!--
+*				{margin:0; padding:0; border:0; font-family:µ¸¿ò, Tahoma;}
+body			{margin:0 20px;}
+h4				{font-size:16px; text-align:center; padding:10px 0 5px 0; letter-spacing:-1px;}
+h5				{font-size:12px; text-align:right; padding:10px 0 5px 0; font-weight:normal;}
+
+a:link, a:visited, a:active	{color:#666; text-decoration:none}
+a:hover						{color:#c00; text-decoration:none; font-weight:bold; letter-spacing:-1px}
+
+table 			{border-collapse:collapse; border:1px solid #b3b3b3}
+td				{font-size:12px; color:#666; padding:5px 0 3px 5px; border:1px solid #ebe9ed; text-align:center;}
+.firstLine		{height: 20px; background: #f05a28;}
+.firstLine td 	{color:#fff;}
+.alignLeft		{text-align:left}
+.secondLine		{height:20px; background:#eee;}
+.secondLine td	{color:#666;}
+.state			{width:100%; overflow:hidden; margin-bottom:20px;}
+.state li		{font-size:12px; padding:3px; padding-left:10px;}
+.state li strike{color:#999;}
+.state li em	{color:#999; padding-left:10px;}
+.col { background:#84d4f2; }
+.col2 { background:#ffff33; }
+
+-->
+</style>
+<script type="text/javascript">
+<!--
+window.onload = function() {
+	var eles = document.getElementsByTagName("a");
+	var host_path = location.protocol + "//" + location.hostname;
+	for (var i = 0; i < eles.length; i++) {
+		eles[i].innerHTML = eles[i].getAttribute("href").replace(host_path, "");
+	}
+	eles = document.getElementsByTagName("tr");
+	//alert(eles.length - 1);
+}
+
+function winPop(winUrl, popName, wid, hei, scroll){
+	lPos = (screen.width) ? (screen.width-wid)/2 : 0;
+	tPos = (screen.height) ? (screen.height-hei)/2 : 0;
+	opt = 'width='+wid+',height='+hei+',top='+tPos+',left='+lPos+',scrollbars='+scroll+',resizable'
+	win = window.open(winUrl, popName, opt)
+}
+
+//-->
+</script>
+<title></title>
+</head>
+<body>
+<h4></h4>
+<table width="100%" border="1" cellpadding="2">
+	<tr class="firstLine">
+		<td width="15%">1Depth</td>
+		<td width="20%">2Depth</td>
+		<td width="12%">URL</td>	
+		<td width="12%">Seperator</td>
+		<td>Page URL</td>
+		
+		<td width="40%">비고</td>
+	</tr>
+	<tr>
+		<td class="alignLeft">메인</td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"><a href="main/main.html"></a></td>
+		<td>-</td>
+	</tr>
+	
+	<tr>
+		<td colspan="6">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="alignLeft" rowspan="4">회사소개</td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"><a href="sub/sub_01_1.html"></a></td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"><a href="sub/sub_01_2.html"></a></td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"><a href="sub/sub_01_3.html"></a></td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"><a href="sub/sub_01_4.html"></a></td>
+		<td>-</td>
+	</tr>
+	
+	<tr>
+		<td colspan="6">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="alignLeft">투자유치</td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"><a href="sub/sub_02.html"></a></td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td colspan="6">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="alignLeft" rowspan="4">이용안내</td>
+		<td class="alignLeft">회사소개</td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"><a href="sub/sub_03_1.html"></a></td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td class="alignLeft">씨머니란?</td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"><a href="sub/sub_03_2.html"></a></td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td class="alignLeft">이용안내</td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"><a href="sub/sub_03_3.html"></a></td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td class="alignLeft">이메일 문의</td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"><a href="sub/sub_03_4.html"></a></td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td colspan="6">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="alignLeft" rowspan="3">공고</td>
+		<td class="alignLeft">공지사항</td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"><a href="sub/sub_04_1.html"></a></td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td class="alignLeft">FAQ</td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"><a href="sub/sub_04_2.html"></a></td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td class="alignLeft">이벤트</td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"><a href="sub/sub_04_3.html"></a></td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td colspan="6">&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="alignLeft" rowspan="4">회원가입</td>
+		<td class="alignLeft">이메일로</td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"><a href="sub/member_01.html"></a></td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td class="alignLeft">이메일로</td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"><a href="sub/member_02.html"></a></td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td class="alignLeft">법인 회원가입</td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"><a href="sub/member_03.html"></a></td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td class="alignLeft">투자조합</td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"><a href="sub/member_04.html"></a></td>
+		<td>-</td>
+	</tr>
+	
+	<tr>
+		<td colspan="6">&nbsp;</td>
+	</tr>
+
+	<tr>
+		<td class="alignLeft" rowspan="4">마이페이지</td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"><a href="sub/my_01.html"></a></td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"><a href="sub/my_02.html"></a></td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"><a href="sub/my_03.html"></a></td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"></td>
+		<td class="alignLeft"><a href="sub/my_04.html"></a></td>
+		<td>-</td>
+	</tr>
+	
+	<tr>
+		<td colspan="6">&nbsp;</td>
+	</tr>
+
+</table>
+
+</body>
+</html>
