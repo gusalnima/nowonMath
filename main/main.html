@@ -21,7 +21,6 @@
 <script type="text/javascript" src="../js/jquery.cookie.js"></script>
 <script type="text/javascript" src="../js/respond.src.js"></script>
 <script type="text/javascript" src="../js/jquery.bxslider.js"></script>
-<script type="text/javascript" src="../js/main_visual.js"></script>
 <script type="text/javascript" src="../js/wia.js"></script>
 <script type="text/javascript" src="../js/gnb.js"></script>
 <script type="text/javascript" src="../js/main.js"></script>
@@ -36,17 +35,13 @@
 
 	jQuery(document).ready(function(){
 		if(!navigator.userAgent.match(/Android|Mobile|iP(hone|od|ad)|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/)){
-			
 		} else {
-			
 		}
-		
 		jQuery('.all_menu_wrap').sy_modalApi(); // 전체메뉴 중앙 팝업
 		jQuery('.m_btm_link').imgOverApi(); //이미지 over
-		jQuery('.main_business').mainBusinessApi(); // 현대위아 사업
-
 		//언어
 		jQuery('.top_util_link .t3').toggleJs();
+
 
 	});
 
