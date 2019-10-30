@@ -1,59 +1,62 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-<title></title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-<!-- 모바일 이미지 -->
-<meta name="title" content="">
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<!-- 모바일 이미지 -->
+	<meta name="title" content="">
 
-<link rel='stylesheet' href='../css/import.css' type='text/css' />
+	<link rel='stylesheet' href='../css/import.css' type='text/css' />
 
-<script type="text/javascript" src="../js/jquery-1.8.1.js"></script>
-<script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="../js/jquery.mousewheel.js"></script>
-<script type="text/javascript" src="../js/greensock/TweenMax.js"></script>
-<script type="text/javascript" src="../js/greensock/TimelineLite.js"></script>
-<script type="text/javascript" src="../js/greensock/easing/EasePack.js"></script>
-<script type="text/javascript" src="../js/jquery.placeholder.js"></script>
-<script type="text/javascript" src="../js/jquery-ui.js"></script>
-<script type="text/javascript" src="../js/jquery.cookie.js"></script>
-<script type="text/javascript" src="../js/respond.src.js"></script>
-<script type="text/javascript" src="../js/jquery.bxslider.js"></script>
-<script type="text/javascript" src="../js/wia.js"></script>
-<script type="text/javascript" src="../js/gnb.js"></script>
-<script type="text/javascript" src="../js/main.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.8.1.js"></script>
+	<script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="../js/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="../js/greensock/TweenMax.js"></script>
+	<script type="text/javascript" src="../js/greensock/TimelineLite.js"></script>
+	<script type="text/javascript" src="../js/greensock/easing/EasePack.js"></script>
+	<script type="text/javascript" src="../js/jquery.placeholder.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.js"></script>
+	<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../js/respond.src.js"></script>
+	<script type="text/javascript" src="../js/jquery.bxslider.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript" src="../js/gnb.js"></script>
+	<script type="text/javascript" src="../js/main.js"></script>
 
-<script type="text/javascript">
-	if(navigator.userAgent.match(/Android|Mobile|iP(hone|od|ad)|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/)){
-		//모바일(스마트폰+태블릿)일 때 실행 될 스크립트
-		$('head').append('<link rel="stylesheet" href="../css/m_layout.css"  type="text/css" />');
-	}
-</script>
-<script type="text/javascript">
-
-	jQuery(document).ready(function(){
-		if(!navigator.userAgent.match(/Android|Mobile|iP(hone|od|ad)|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/)){
-		} else {
+	<script type="text/javascript">
+		if (navigator.userAgent.match(/Android|Mobile|iP(hone|od|ad)|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/)) {
+			//모바일(스마트폰+태블릿)일 때 실행 될 스크립트
+			$('head').append('<link rel="stylesheet" href="../css/m_layout.css"  type="text/css" />');
 		}
-		//jQuery('.all_menu_wrap').sy_modalApi(); // 전체메뉴 중앙 팝업
-		jQuery('.m_btm_link').imgOverApi(); //이미지 over
-		jQuery('.main_tab').tabDefultApi();
-		//언어
-		// jQuery('.top_util_link .t3').toggleJs();
+	</script>
+	<script type="text/javascript">
+
+		jQuery(document).ready(function () {
+			if (!navigator.userAgent.match(/Android|Mobile|iP(hone|od|ad)|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/)) {
+			} else {
+			}
+			//jQuery('.all_menu_wrap').sy_modalApi(); // 전체메뉴 중앙 팝업
+			jQuery('.m_btm_link').imgOverApi(); //이미지 over
+			jQuery('.main_tab').tabDefultApi();
+			//언어
+			// jQuery('.top_util_link .t3').toggleJs();
 
 
-	});
+		});
 
-</script>
+	</script>
 
-<!--[if lt IE 9]>
+	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 </head>
+
 <body>
-	<div id="wrap">		
+	<div id="wrap">
 		<div id="header_wrap">
 			<div class="header">
 				<div class="wsize">
@@ -105,7 +108,7 @@
 									</li>
 									<li class="d1 d1a"><a href="javascript://">매스휴먼북</a>
 										<div class="dep2 dep2_4">
-											<ul >
+											<ul>
 												<li class="d2"><a href="#">참가 신청</a></li>
 												<li class="d2"><a href="#">개설 신청</a></li>
 												<li class="d2"><a href="#">강사 등록</a></li>
@@ -154,140 +157,162 @@
 									</li>
 								</ul>
 							</div>
-							<p class="ico_menu jQMenu"><a href="javascript://"><img src="../img/common/ico_menu.png" alt="메뉴"></a></p>
-						</div><!--gnb_wrap-->
+							<p class="ico_menu jQMenu"><a href="javascript://"><img src="../img/common/ico_menu.png"
+										alt="메뉴"></a></p>
+						</div>
+						<!--gnb_wrap-->
 					</div>
 				</div>
 				<div class="gnb_bg">&nbsp;</div>
 			</div>
 		</div> <!-- header -->
 		<div id="contentWrap">
-				<div class="wsize">
-					<div>
-						<img src="../img/main_visual.jpg" alt="">
-					</div>
-					<div class="msize">
-						<div class="recom_wrap">
-							<div class="recom_tit">
-								<p>추천전시물</p>	
-							</div>
-							<div class="recom_cont">
-								<div class="recom_box">
-										<div class="gallSlider">
-											<div class="slide_cont">
-												<a href="#"><p class="img"><img src="../img/sample_img_1.jpg" alt=""></p>
-												<div class="txts">
-													<p class="t1">올록볼록 | 수블록</p>
-													<p class="t2">미션 카드에 제시된 문제를 보고, 수 배열표의 수 블록을 앞으로 당기면서 수의 배열과 규칙에 대한 개념을 이해한다.</p>
-												</div></a>
-												<a href="#" class="more"><img src="../img/ico_banner_more.png" alt=""></a>
-											</div>
-											<div class="slide_cont">
-													<a href="#"><p class="img"><img src="../img/sample_img_1.jpg" alt=""></p>
-												<div class="txts">
-													<p class="t1">올록볼록 | 수블록</p>
-													<p class="t2">미션 카드에 제시된 문제를 보고, 수 배열표의 수 블록을 앞으로 당기면서 수의 배열과 규칙에 대한 개념을 이해한다.</p>
-												</div></a>
-												<a href="#" class="more"><img src="../img/ico_banner_more.png" alt=""></a>
-											</div>
-											<div class="slide_cont">
-													<a href="#"><p class="img"><img src="../img/sample_img_1.jpg" alt=""></p>
-													<div class="txts">
-														<p class="t1">올록볼록 | 수블록</p>
-														<p class="t2">미션 카드에 제시된 문제를 보고, 수 배열표의 수 블록을 앞으로 당기면서 수의 배열과 규칙에 대한 개념을 이해한다.</p>
-													</div></a>
-													<a href="#" class="more"><img src="../img/ico_banner_more.png" alt=""></a>
-												</div>
-												<div class="slide_cont">
-														<a href="#"><p class="img"><img src="../img/sample_img_1.jpg" alt=""></p>
-														<div class="txts">
-															<p class="t1">올록볼록 | 수블록</p>
-															<p class="t2">미션 카드에 제시된 문제를 보고, 수 배열표의 수 블록을 앞으로 당기면서 수의 배열과 규칙에 대한 개념을 이해한다.</p>
-														</div></a>
-														<a href="#" class="more"><img src="../img/ico_banner_more.png" alt=""></a>
-													</div>
-													<div class="slide_cont">
-															<a href="#"><p class="img"><img src="../img/sample_img_1.jpg" alt=""></p>
-															<div class="txts">
-																<p class="t1">올록볼록 | 수블록</p>
-																<p class="t2">미션 카드에 제시된 문제를 보고, 수 배열표의 수 블록을 앞으로 당기면서 수의 배열과 규칙에 대한 개념을 이해한다.</p>
-															</div></a>
-															<a href="#" class="more"><img src="../img/ico_banner_more.png" alt=""></a>
-														</div>
-										</div>
-								</div>
-								<script>
-									$('.gallSlider').bxSlider({
-										auto: true,
-										autoControls: true,
-										stopAutoOnClick: true,
-										pager: true,
-										maxSlides:4,
-										moveSlides:1,
-										infiniteLoop:false,
-										slideMargin:40,
-										slideWidth: 220
-										});	
-								</script>
-							</div>
-						</div>
-
-						<div class="book_wrap">
-								<div class="book_tit">
-									<p>매스휴먼북</p>	
-								</div>
-								<div class="book_cont">
-									<div class="book_box">
-										<p class="t1">이벤트</p>
-										<p class="t2">우리 주변을 잘관찰해 보아요.<br/>세모네모사물 찾기 사진 공모전<br/>기간 : 2019. 10. 20 ~ 11. 30<br/>
-											참여방법:<br/>
-											자유롭게 찍은 사진을 이메일로 보내주세요.</p>
-									</div>
-								</div>
-							</div>
-						<div class="cal_noti_wrap">
-							<div class="notice_list_wrap">
-								<ul class="main_tab">
-									<li><a href="javascript://">1</a></li>
-									<li><a href="javascript://">2</a></li>
-								</ul>
-								<div>
-									<div class="notice">
-										3
-									</div>
-									<div class="notice2">
-										4
-									</div>
-								</div>
-							</div>
-							<div class="calendar_wrap">
-
-							</div>	
-						</div>
-					</div>
+			<div class="wsize">
+				<div>
+					<img src="../img/main_visual.jpg" alt="">
 				</div>
-		</div>
-			<div id="footer_wrap">
-				
-				<div class="wsize">
-					<div class="msize">
-						<h2><a href="#"><img src="../img/foot_logo.png" alt=""></a></h2>
-						<div class="foots">
-							<p class="mb10">
-								<a href="#">사이버신문고</a>
-								<span>|</span>
-								<a href="javascript://" class="jQPop_private1">개인정보 처리방침</a>
-								<span>|</span>
-								<a href="javascript://" class="jQPop_private2">영상정보처리기기 운영 관리 방침</a>
-							</p>
-							<p class="address mb10">경상남도 창원시 성산구 정동로 153 | 대표전화 055-280-9114</p>
-							<p class="copy">2017 HYUNDAI WIA CORP.ALL RIGHTS RESERVED.</p>
+				<div class="msize">
+					<div class="recom_wrap">
+						<div class="recom_tit">
+							<p>추천전시물</p>
 						</div>
-						<p class="hyundai_group"><a href="#"><img src="../img/common/logo_foot_group.jpg" alt="HYUNDAI MOTOR GROUP"></a></p>
-						<p id="back-top" class="btnTop"><a href="javascript://"><img src="../img/common/ico_top.gif" alt="top"></a></p>
+						<div class="recom_cont">
+							<div class="recom_box">
+								<div class="gallSlider">
+									<div class="slide_cont">
+										<a href="#">
+											<p class="img"><img src="../img/sample_img_1.jpg" alt=""></p>
+											<div class="txts">
+												<p class="t1">올록볼록 | 수블록</p>
+												<p class="t2">미션 카드에 제시된 문제를 보고, 수 배열표의 수 블록을 앞으로 당기면서 수의 배열과 규칙에 대한 개념을
+													이해한다.</p>
+											</div>
+										</a>
+										<a href="#" class="more"><img src="../img/ico_banner_more.png" alt=""></a>
+									</div>
+									<div class="slide_cont">
+										<a href="#">
+											<p class="img"><img src="../img/sample_img_1.jpg" alt=""></p>
+											<div class="txts">
+												<p class="t1">올록볼록 | 수블록</p>
+												<p class="t2">미션 카드에 제시된 문제를 보고, 수 배열표의 수 블록을 앞으로 당기면서 수의 배열과 규칙에 대한 개념을
+													이해한다.</p>
+											</div>
+										</a>
+										<a href="#" class="more"><img src="../img/ico_banner_more.png" alt=""></a>
+									</div>
+									<div class="slide_cont">
+										<a href="#">
+											<p class="img"><img src="../img/sample_img_1.jpg" alt=""></p>
+											<div class="txts">
+												<p class="t1">올록볼록 | 수블록</p>
+												<p class="t2">미션 카드에 제시된 문제를 보고, 수 배열표의 수 블록을 앞으로 당기면서 수의 배열과 규칙에 대한 개념을
+													이해한다.</p>
+											</div>
+										</a>
+										<a href="#" class="more"><img src="../img/ico_banner_more.png" alt=""></a>
+									</div>
+									<div class="slide_cont">
+										<a href="#">
+											<p class="img"><img src="../img/sample_img_1.jpg" alt=""></p>
+											<div class="txts">
+												<p class="t1">올록볼록 | 수블록</p>
+												<p class="t2">미션 카드에 제시된 문제를 보고, 수 배열표의 수 블록을 앞으로 당기면서 수의 배열과 규칙에 대한 개념을
+													이해한다.</p>
+											</div>
+										</a>
+										<a href="#" class="more"><img src="../img/ico_banner_more.png" alt=""></a>
+									</div>
+									<div class="slide_cont">
+										<a href="#">
+											<p class="img"><img src="../img/sample_img_1.jpg" alt=""></p>
+											<div class="txts">
+												<p class="t1">올록볼록 | 수블록</p>
+												<p class="t2">미션 카드에 제시된 문제를 보고, 수 배열표의 수 블록을 앞으로 당기면서 수의 배열과 규칙에 대한 개념을
+													이해한다.</p>
+
+
+											</div>
+										</a>
+										<a href="#" class="more"><img src="../img/ico_banner_more.png" alt=""></a>
+									</div>
+								</div>
+							</div>
+							<script>
+								$('.gallSlider').bxSlider({
+									auto: true,
+									autoControls: true,
+									stopAutoOnClick: true,
+									pager: true,
+									maxSlides: 4,
+									moveSlides: 1,
+									infiniteLoop: false,
+									slideMargin: 40,
+									slideWidth: 220
+								});	
+							</script>
+						</div>
+					</div>
+
+					<div class="book_wrap">
+						<div class="book_tit">
+							<p>매스휴먼북</p>
+						</div>
+						<div class="book_cont">
+							<div class="book_box">
+								<p class="t1">이벤트</p>
+								<p class="t2">우리 주변을 잘관찰해 보아요.<br />세모네모사물 찾기 사진 공모전<br />기간 : 2019. 10. 20 ~ 11.
+									30<br />
+									참여방법:<br />
+									자유롭게 찍은 사진을 이메일로 보내주세요.</p>
+							</div>
+						</div>
+					</div>
+					<div class="cal_noti_wrap">
+						<div class="notice_list_wrap">
+							<ul class="main_tab">
+								<li><a href="javascript://">1</a></li>
+								<li><a href="javascript://">2</a></li>
+							</ul>
+							<div>
+								<div class="notice">
+									3
+								</div>
+								<div class="notice2">
+									4
+								</div>
+							</div>
+						</div>
+						<div class="calendar_wrap">
+
+						</div>
 					</div>
 				</div>
 			</div>
+		</div>
+		<div id="footer_wrap">
+
+			<div class="wsize">
+				<div class="msize">
+					<h2><a href="#"><img src="../img/foot_logo.png" alt=""></a></h2>
+					<div class="foots">
+						<p class="mb10">
+							<a href="#">사이버신문고</a>
+							<span>|</span>
+							<a href="javascript://" class="jQPop_private1">개인정보 처리방침</a>
+							<span>|</span>
+							<a href="javascript://" class="jQPop_private2">영상정보처리기기 운영 관리 방침</a>
+						</p>
+						<p class="address mb10">경상남도 창원시 성산구 정동로 153 | 대표전화 055-280-9114</p>
+						<p class="copy">2017 HYUNDAI WIA CORP.ALL RIGHTS RESERVED.</p>
+					</div>
+					<p class="hyundai_group"><a href="#"><img src="../img/common/logo_foot_group.jpg"
+								alt="HYUNDAI MOTOR GROUP"></a></p>
+					<p id="back-top" class="btnTop"><a href="javascript://"><img src="../img/common/ico_top.gif"
+								alt="top"></a></p>
+				</div>
+			</div>
+		</div>
 	</div> <!-- widsize -->
 
 
@@ -295,13 +320,13 @@
 	<div class="pop_wrap pop_agree">
 		<p class="pop_tit">개인정보 보호정책</p>
 		<p class="pop_txt">내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니
-		다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역
-		입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 
-		영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어
-		가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이
-		 들어가는 영역입니다.
-		내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니
-		다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역
+			다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역
+			입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는
+			영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어
+			가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이
+			들어가는 영역입니다.
+			내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니
+			다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역
 		</p>
 		<p class="center"><button class="sm_blue_btn2 clo">닫기</button></p>
 		<p class="pop_clo"><a href="javascript://" class="clo"><img src="../img/common/pop_close.gif" alt="닫기"></a></p>
@@ -310,13 +335,13 @@
 	<div class="pop_wrap pop_eula">
 		<p class="pop_tit">이용약관</p>
 		<p class="pop_txt">내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니
-		다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역
-		입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 
-		영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어
-		가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이
-		 들어가는 영역입니다.
-		내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니
-		다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역
+			다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역
+			입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는
+			영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어
+			가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이
+			들어가는 영역입니다.
+			내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니
+			다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역
 		</p>
 		<p class="center"><button class="sm_blue_btn2 clo">닫기</button></p>
 		<p class="pop_clo"><a href="javascript://" class="clo"><img src="../img/common/pop_close.gif" alt="닫기"></a></p>
@@ -327,89 +352,89 @@
 	<div class="all_menu_wrap">
 		<div class="all_menu">
 			<ul class="dep1">
-					<li class="d1 d1a"><a href="javascript://">관람안내</a>
-						<div class="dep2_wrap">
-							<ul class="dep2">
-								<li class="d2"><a href="#">이용안내</a></li>
-								<li class="d2"><a href="#">층별안내</a></li>
-								<li class="d2"><a href="#">시설안내</a></li>
-								<li class="d2"><a href="#">대관안내</a></li>
-								<li class="d2"><a href="#">주차안내</a></li>
-								<li class="d2"><a href="#">관람예약</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="d1 d1a"><a href="javascript://">전시안내</a>
-						<div class="dep2_wrap">
-								<ul class="dep2">
-								<li class="d2"><a href="#">전시종합안내</a></li>
-								<li class="d2"><a href="#">기획전시공간(1층)</a></li>
-								<li class="d2"><a href="#">수학놀이터(1층)</a></li>
-								<li class="d2"><a href="#">수학과 세상(2층)</a></li>
-								<li class="d2"><a href="#">수학과 예술(3층)</a></li>
-								<li class="d2"><a href="#">야외</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="d1 d1a"><a href="javascript://">교육 및 행사</a>
-						<div class="dep2_wrap">
-								<ul class="dep2">
-								<li class="d2"><a href="#">수학교육프로그램</a></li>
-								<li class="d2"><a href="#">수학문화행사</a></li>
-								<li class="d2"><a href="#">수학봉사 서포터즈</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="d1 d1a"><a href="javascript://">매스휴먼북</a>
-						<div class="dep2_wrap">
-								<ul class="dep2">
-								<li class="d2"><a href="#">참가 신청</a></li>
-								<li class="d2"><a href="#">개설 신청</a></li>
-								<li class="d2"><a href="#">강사 등록</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="d1 d1a"><a href="javascript://">소통마당</a>
-						<div class="dep2_wrap">
-								<ul class="dep2">
-								<li class="d2"><a href="#">공지사항</a></li>
-								<li class="d2"><a href="#">뉴스 및 소식</a></li>
-								<li class="d2"><a href="#">Q & A</a></li>
-								<li class="d2"><a href="#">자료실</a></li>
-								<li class="d2"><a href="#">소식지</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="d1 d1a"><a href="javascript://">열린시설</a>
-						<div class="dep2_wrap">
-								<ul class="dep2">
-								<li class="d2"><a href="#">드라이시네마(영화관)</a></li>
-								<li class="d2"><a href="#">시그마자료실(도서관)</a></li>
-								<li class="d2"><a href="#">트라이교구판매샵</a></li>
-								<li class="d2"><a href="#">카페테리아</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="d1 d1a"><a href="javascript://">수학문화관 소개</a>
-						<div class="dep2_wrap">
-								<ul class="dep2">
-								<li class="d2"><a href="#">인사말</a></li>
-								<li class="d2"><a href="#">일반현황</a></li>
-								<li class="d2"><a href="#">조직도</a></li>
-								<li class="d2"><a href="#">찾아오시는 길</a></li>
-							</ul>
-						</div>
-					</li>
-					<li class="d1 d1a"><a href="javascript://">서비스정책</a>
-						<div class="dep2_wrap">
-								<ul class="dep2">
-								<li class="d2"><a href="#">이용약관</a></li>
-								<li class="d2"><a href="#">개인정보처리방침</a></li>
-								<li class="d2"><a href="#">법적고지</a></li>
-							</ul>
-						</div>
-					</li>
-				
+				<li class="d1 d1a"><a href="javascript://">관람안내</a>
+					<div class="dep2_wrap">
+						<ul class="dep2">
+							<li class="d2"><a href="#">이용안내</a></li>
+							<li class="d2"><a href="#">층별안내</a></li>
+							<li class="d2"><a href="#">시설안내</a></li>
+							<li class="d2"><a href="#">대관안내</a></li>
+							<li class="d2"><a href="#">주차안내</a></li>
+							<li class="d2"><a href="#">관람예약</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="d1 d1a"><a href="javascript://">전시안내</a>
+					<div class="dep2_wrap">
+						<ul class="dep2">
+							<li class="d2"><a href="#">전시종합안내</a></li>
+							<li class="d2"><a href="#">기획전시공간(1층)</a></li>
+							<li class="d2"><a href="#">수학놀이터(1층)</a></li>
+							<li class="d2"><a href="#">수학과 세상(2층)</a></li>
+							<li class="d2"><a href="#">수학과 예술(3층)</a></li>
+							<li class="d2"><a href="#">야외</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="d1 d1a"><a href="javascript://">교육 및 행사</a>
+					<div class="dep2_wrap">
+						<ul class="dep2">
+							<li class="d2"><a href="#">수학교육프로그램</a></li>
+							<li class="d2"><a href="#">수학문화행사</a></li>
+							<li class="d2"><a href="#">수학봉사 서포터즈</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="d1 d1a"><a href="javascript://">매스휴먼북</a>
+					<div class="dep2_wrap">
+						<ul class="dep2">
+							<li class="d2"><a href="#">참가 신청</a></li>
+							<li class="d2"><a href="#">개설 신청</a></li>
+							<li class="d2"><a href="#">강사 등록</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="d1 d1a"><a href="javascript://">소통마당</a>
+					<div class="dep2_wrap">
+						<ul class="dep2">
+							<li class="d2"><a href="#">공지사항</a></li>
+							<li class="d2"><a href="#">뉴스 및 소식</a></li>
+							<li class="d2"><a href="#">Q & A</a></li>
+							<li class="d2"><a href="#">자료실</a></li>
+							<li class="d2"><a href="#">소식지</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="d1 d1a"><a href="javascript://">열린시설</a>
+					<div class="dep2_wrap">
+						<ul class="dep2">
+							<li class="d2"><a href="#">드라이시네마(영화관)</a></li>
+							<li class="d2"><a href="#">시그마자료실(도서관)</a></li>
+							<li class="d2"><a href="#">트라이교구판매샵</a></li>
+							<li class="d2"><a href="#">카페테리아</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="d1 d1a"><a href="javascript://">수학문화관 소개</a>
+					<div class="dep2_wrap">
+						<ul class="dep2">
+							<li class="d2"><a href="#">인사말</a></li>
+							<li class="d2"><a href="#">일반현황</a></li>
+							<li class="d2"><a href="#">조직도</a></li>
+							<li class="d2"><a href="#">찾아오시는 길</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="d1 d1a"><a href="javascript://">서비스정책</a>
+					<div class="dep2_wrap">
+						<ul class="dep2">
+							<li class="d2"><a href="#">이용약관</a></li>
+							<li class="d2"><a href="#">개인정보처리방침</a></li>
+							<li class="d2"><a href="#">법적고지</a></li>
+						</ul>
+					</div>
+				</li>
+
 			</ul>
 		</div>
 	</div>
@@ -420,4 +445,5 @@
 	<div class="black_bg">&nbsp;</div>
 	<a href="javascript://" class="jQMenu_close"><img src="../img/common/menu_close_web.png" alt="메뉴 닫기"></a>
 </body>
+
 </html>

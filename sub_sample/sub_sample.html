@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-<title></title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-<!-- 모바일 이미지 -->
-<meta name="title" content="">
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<!-- 모바일 이미지 -->
+	<meta name="title" content="">
 
-<link rel='stylesheet' href='../css/import.css' type='text/css' />
+	<link rel='stylesheet' href='../css/import.css' type='text/css' />
 
-<script type="text/javascript" src="../js/jquery-1.8.1.js"></script>
-<script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="../js/jquery.mousewheel.js"></script>
-<script type="text/javascript" src="../js/greensock/TweenMax.js"></script>
-<script type="text/javascript" src="../js/greensock/TimelineLite.js"></script>
-<script type="text/javascript" src="../js/greensock/easing/EasePack.js"></script>
-<script type="text/javascript" src="../js/jquery.placeholder.js"></script>
-<script type="text/javascript" src="../js/jquery-ui.js"></script>
-<script type="text/javascript" src="../js/jquery.cookie.js"></script>
-<script type="text/javascript" src="../js/respond.src.js"></script>
-<script type="text/javascript" src="../js/jquery.bxslider.js"></script>
-<script type="text/javascript" src="../js/wia.js"></script>
-<script type="text/javascript" src="../js/gnb.js"></script>
+	<script type="text/javascript" src="../js/jquery-1.8.1.js"></script>
+	<script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="../js/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="../js/greensock/TweenMax.js"></script>
+	<script type="text/javascript" src="../js/greensock/TimelineLite.js"></script>
+	<script type="text/javascript" src="../js/greensock/easing/EasePack.js"></script>
+	<script type="text/javascript" src="../js/jquery.placeholder.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.js"></script>
+	<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="../js/respond.src.js"></script>
+	<script type="text/javascript" src="../js/jquery.bxslider.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+	<script type="text/javascript" src="../js/gnb.js"></script>
 
-<script type="text/javascript">
+	<script type="text/javascript">
 
-	jQuery(document).ready(function(){
-		if(navigator.userAgent.match(/Android|Mobile|iPhone|iPad|iPod|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|OperaM(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/i)){
-			//모바일(스마트폰+태블릿)일 때 실행 될 스크립트
-			$('head').append('<link rel="stylesheet" href="../css/m_layout.css"  type="text/css" />');
-				jQuery(window).load(function(){
+		jQuery(document).ready(function () {
+			if (navigator.userAgent.match(/Android|Mobile|iPhone|iPad|iPod|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|OperaM(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/i)) {
+				//모바일(스마트폰+태블릿)일 때 실행 될 스크립트
+				$('head').append('<link rel="stylesheet" href="../css/m_layout.css"  type="text/css" />');
+				jQuery(window).load(function () {
 					jQuery('.main_new_product_slide').bxSlider({
 					});
 				});
@@ -43,31 +45,32 @@
 						
 					}
 				});*/
-				jQuery(window).load(function(){
+				jQuery(window).load(function () {
 					jQuery('.news_list_mobile').bxSlider({
 					});
 				});
-		} else {
-			jQuery('.all_menu_wrap').sy_modalApi(); // 전체메뉴 중앙 팝업
-			jQuery(window).load(function(){
-				jQuery('.main_new_product_slide').bxSlider({
-					mode: 'vertical'
+			} else {
+				jQuery('.all_menu_wrap').sy_modalApi(); // 전체메뉴 중앙 팝업
+				jQuery(window).load(function () {
+					jQuery('.main_new_product_slide').bxSlider({
+						mode: 'vertical'
+					});
 				});
-			});
-		}
-		//이미지 over
-		jQuery('.m_btm_link').imgOverApi(); 
-		//언어
-		jQuery('.top_util_link .t3').toggleJs();
+			}
+			//이미지 over
+			jQuery('.m_btm_link').imgOverApi();
+			//언어
+			jQuery('.top_util_link .t3').toggleJs();
 
-	});
+		});
 
-</script>
+	</script>
 
-<!--[if lt IE 9]>
+	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 </head>
+
 <body>
 	<div id="wrap">
 		<div id="header_wrap">
@@ -126,12 +129,12 @@
 									<li class="d1 d1a"><a href="javascript://">지속가능경영</a>
 										<div class="dep2 dep2_4">
 											<p><img src="../img/common/menu_ico_4.png"></p>
-											<ul >
+											<ul>
 												<li class="d2 tit">지속가능경영</li>
 												<li class="d2"><a href="#">사회공헌</a></li>
 												<li class="d2"><a href="#">동반성장</a></li>
 												<li class="d2"><a href="#">윤리경영</a></li>
-												<li class="d2"><a href="#">공정거래자율준수<br/>프로그램</a></li>
+												<li class="d2"><a href="#">공정거래자율준수<br />프로그램</a></li>
 												<li class="d2"><a href="#">안전경영</a></li>
 												<li class="d2"><a href="#">환경경영</a></li>
 												<li class="d2"><a href="#">품질경영</a></li>
@@ -167,15 +170,17 @@
 							</div>
 							<div class="gnb_bg">&nbsp;</div>
 							<p class="ico_menu jQMenu"><a href="javascript://">
-								<img src="../img/common/ico_menu_web.png" alt="메뉴" class="wico"><img src="../img/common/ico_menu.png" alt="메뉴" class="mico"></a>
+									<img src="../img/common/ico_menu_web.png" alt="메뉴" class="wico"><img
+										src="../img/common/ico_menu.png" alt="메뉴" class="mico"></a>
 							</p>
-						</div><!--gnb_wrap-->
+						</div>
+						<!--gnb_wrap-->
 					</div>
 				</div>
 			</div>
-			
+
 		</div> <!-- header -->
-		
+
 		<div id="mobileFix">
 			<div class="sub_visual sub_visual_02">
 				<div class="bg_pt">&nbsp;</div>
@@ -185,7 +190,7 @@
 					</div>
 				</div>
 				<p class="btm_slant_web">&nbsp;</p>
-				
+
 				<div id="subTop">
 					<div class="wsize">
 						<div class="msize">
@@ -234,7 +239,7 @@
 						</div>
 					</div>
 					<script type="text/javascript">
-						if(navigator.userAgent.match(/Android|Mobile|iPhone|iPad|iPod|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|OperaM(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/i)){
+						if (navigator.userAgent.match(/Android|Mobile|iPhone|iPad|iPod|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|OperaM(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/i)) {
 							jQuery('.web_currents .twodep').currentMo_js();
 						} else {
 							jQuery('.web_currents .twodep').current_js();
@@ -246,8 +251,9 @@
 				<div class="wsize">
 					<div class="msize">
 
-						
-					</div><!--msize-->
+
+					</div>
+					<!--msize-->
 				</div>
 			</div> <!-- sub_content -->
 		</div>
@@ -269,7 +275,11 @@
 			<div class="foot_link_wrap">
 				<div class="family_link_wrap">
 					<a class="close_btn jQFamily_close_btn" href="javascript://">&nbsp;</a>
-					<div class="f_tit"><div class="wsize"><div class="msize">HYUNDAI WIA LINK</div></div></div>
+					<div class="f_tit">
+						<div class="wsize">
+							<div class="msize">HYUNDAI WIA LINK</div>
+						</div>
+					</div>
 					<div class="wsize">
 						<div class="family_menu">
 							<ul class="dep1">
@@ -277,7 +287,7 @@
 									<div class="dep2_wrap">
 										<ul class="dep2">
 											<li class="d2"><a href="#">현대위아 그룹웨어</a></li>
-											<li class="d2"><a href="#">AONE<br class="msubnone"/>(통합구매시스템)</a></li>
+											<li class="d2"><a href="#">AONE<br class="msubnone" />(통합구매시스템)</a></li>
 											<li class="d2"><a href="#">VAATZ </a></li>
 											<li class="d2"><a href="#">방문예약시스템</a></li>
 										</ul>
@@ -353,7 +363,7 @@
 								<li class="d1"><a href="javascript://">현대자동차 그룹</a></li>
 							</ul>
 						</div>
-					</div>	
+					</div>
 				</div>
 				<div class="wsize">
 					<div class="msize">
@@ -384,25 +394,27 @@
 						<p class="address mb10">경상남도 창원시 성산구 정동로 153 | 대표전화 055-280-9114</p>
 						<p class="copy">2017 HYUNDAI WIA CORP.ALL RIGHTS RESERVED.</p>
 					</div>
-					<p class="hyundai_group"><a href="#"><img src="../img/common/logo_foot_group.jpg" alt="HYUNDAI MOTOR GROUP"></a></p>
-					<p id="back-top" class="btnTop"><a href="javascript://"><img src="../img/common/ico_top.gif" alt="top"></a></p>
+					<p class="hyundai_group"><a href="#"><img src="../img/common/logo_foot_group.jpg"
+								alt="HYUNDAI MOTOR GROUP"></a></p>
+					<p id="back-top" class="btnTop"><a href="javascript://"><img src="../img/common/ico_top.gif"
+								alt="top"></a></p>
 				</div>
 			</div>
 		</div>
-	</div> 
+	</div>
 
 
 	<!-- popup -->
 	<div class="pop_wrap pop_agree">
 		<p class="pop_tit">개인정보 보호정책</p>
 		<p class="pop_txt">내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니
-		다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역
-		입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 
-		영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어
-		가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이
-		 들어가는 영역입니다.
-		내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니
-		다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역
+			다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역
+			입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는
+			영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어
+			가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이
+			들어가는 영역입니다.
+			내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니
+			다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역
 		</p>
 		<p class="center"><button class="sm_blue_btn2 clo">닫기</button></p>
 		<p class="pop_clo"><a href="javascript://" class="clo"><img src="../img/common/pop_close.gif" alt="닫기"></a></p>
@@ -411,13 +423,13 @@
 	<div class="pop_wrap pop_eula">
 		<p class="pop_tit">이용약관</p>
 		<p class="pop_txt">내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니
-		다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역
-		입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 
-		영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어
-		가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이
-		 들어가는 영역입니다.
-		내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니
-		다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역
+			다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역
+			입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는
+			영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어
+			가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이
+			들어가는 영역입니다.
+			내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니
+			다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역
 		</p>
 		<p class="center"><button class="sm_blue_btn2 clo">닫기</button></p>
 		<p class="pop_clo"><a href="javascript://" class="clo"><img src="../img/common/pop_close.gif" alt="닫기"></a></p>
@@ -555,10 +567,10 @@
 									<li class="d3"><a href="#">구매총괄본부 윤리규정</a></li>
 								</ul>
 							</li>
-							<li class="d2"><a href="#">공정거래자율준수<br/>프로그램<span class="more">더보기</span></a>
+							<li class="d2"><a href="#">공정거래자율준수<br />프로그램<span class="more">더보기</span></a>
 								<ul class="dep3">
 									<li class="d3"><a href="#">공정거래자율준수 소개</a></li>
-									<li class="d3"><a href="#">자율준수 선언문/<br class="msubnone"/>관리자제도</a></li>
+									<li class="d3"><a href="#">자율준수 선언문/<br class="msubnone" />관리자제도</a></li>
 									<li class="d3"><a href="#">CP관련규정/자율준수</a></li>
 									<li class="d3"><a href="#">편람</a></li>
 								</ul>
@@ -612,4 +624,5 @@
 	<div class="black_bg">&nbsp;</div>
 	<a href="javascript://" class="jQMenu_close"><img src="../img/common/menu_close_web.png" alt="메뉴 닫기"></a>
 </body>
+
 </html>
