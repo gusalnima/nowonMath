@@ -122,15 +122,6 @@ img { border: 0px; vertical-align:top; }
 table{/* border-collapse:collapse;table-layout:fixed; */border-collapse:collapse;border-spacing:0}
 
 
-/* 모바일에서 꾹 눌렀을때 텍스트 복사 막기 */
-p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, a, img, button, legend {
-  -webkit-touch-callout: none; /* iOS Safari */
-  -webkit-user-select: none; /* Safari */
-   -khtml-user-select: none; /* Konqueror HTML */
-     -moz-user-select: none; /* Old versions of Firefox */
-      -ms-user-select: none; /* Internet Explorer/Edge */
-          user-select: none; /* Non-prefixed version, currently */
-}
 
 /* 터치시 하이라이트 제거 */
 * { 
@@ -531,7 +522,7 @@ a:active { text-decoration: none; color:#000; }
 .mr41 { margin-right:41px !important; }
 .mr50 { margin-right:50px !important; }
 .mr60 { margin-right:60px !important; }
-
+.mr90 { margin-right:90px !important; }
 
 .mb0 { margin-bottom:0px !important; }
 .mb1 { margin-bottom:1px !important; }
