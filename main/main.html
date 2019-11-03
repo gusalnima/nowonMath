@@ -40,11 +40,7 @@
 			} else {
 			}
 			//jQuery('.all_menu_wrap').sy_modalApi(); // 전체메뉴 중앙 팝업
-			jQuery('.m_btm_link').imgOverApi(); //이미지 over
 			jQuery('.main_tab').tabDefultApi();
-			//언어
-			// jQuery('.top_util_link .t3').toggleJs();
-
 
 		});
 
@@ -157,7 +153,7 @@
 									</li>
 								</ul>
 							</div>
-							<p class="ico_menu jQMenu"><a href="javascript://"><img src="../img/common/ico_menu.png"
+							<p class="ico_menu jQMenu"><a href="javascript://"><img src="../img/ico_menu.png"
 										alt="메뉴"></a></p>
 						</div>
 						<!--gnb_wrap-->
@@ -168,10 +164,32 @@
 		</div> <!-- header -->
 		<div id="contentWrap">
 			<div class="wsize">
-				<div>
-					<img src="../img/main_visual.jpg" alt="">
+				<div class="visual">
+					<div class="visualSlider">
+						<div class="visual_box"><img src="../img/main_visual.jpg" alt="">
+							<div class="boxs">
+								<p class="t1">블라블라</p>
+								<p class="btn"><a href="#">블라 BTN</a></p>
+							</div>
+						</div>
+						<div class="visual_box"><img src="../img/main_visual.jpg" alt="">
+							<div class="boxs">
+								<p class="t1">블라블라</p>
+								<p class="btn"><a href="#">블라 BTN</a></p>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="msize">
+				<script>
+					$('.visualSlider').bxSlider({
+						auto: true,
+						autoControls: true,
+						stopAutoOnClick: true,
+						pager: true,
+						infiniteLoop: true,
+					});	
+				</script>
+				<div class="msize msize_no">
 					<div class="recom_wrap">
 						<div class="recom_tit">
 							<p>추천전시물</p>
@@ -180,99 +198,96 @@
 							<div class="recom_box">
 								<div class="gallSlider">
 									<div class="slide_cont">
-										<p class="img"><img src="../img/sample_img_1.jpg" alt=""></p>
-										<div class="txts">
-											<p class="t1">올록볼록 | 수블록</p>
-											<p class="t2">미션 카드에 제시된 문제를 보고, 수 배열표의 수 블록을 앞으로 당기면서 수의 배열과 규칙에 대한 개념을
-												이해한다.</p>
-										</div>
+										<a href="#" class="c">
+											<p class="img"><img src="../img/sample_img_1.jpg" alt=""></p>
+											<div class="txts">
+												<p class="t1">올록볼록 | 수블록</p>
+												<p class="t2">미션 카드에 제시된 문제를 보고, 수 배열표의 수 블록을 앞으로 당기면서 수의 배열과 규칙에 대한 개념을
+													이해한다.</p>
+											</div>
+										</a>
 										<a href="#" class="more"><img src="../img/ico_banner_more.png" alt=""></a>
-										<div class="hover">
+										<!-- <div class="hover">
 											<div>
 												<p class="center">center text</p>
 												<a href="#">버튼</a>
 											</div>
 											<p class="bg">&nbsp;</p>
-										</div>
+										</div> -->
 									</div>
 									<div class="slide_cont">
-										<p class="img"><img src="../img/sample_img_1.jpg" alt=""></p>
-										<div class="txts">
-											<p class="t1">올록볼록 | 수블록</p>
-											<p class="t2">미션 카드에 제시된 문제를 보고, 수 배열표의 수 블록을 앞으로 당기면서 수의 배열과 규칙에 대한 개념을
-												이해한다.</p>
-										</div>
-										<a href="#" class="more"><img src="../img/ico_banner_more.png" alt=""></a>
-										<div class="hover">
-											<div>
-												<p class="center">center text</p>
-												<a href="#">버튼</a>
+										<a href="#" class="c">
+											<p class="img"><img src="../img/sample_img_1.jpg" alt=""></p>
+											<div class="txts">
+												<p class="t1">올록볼록 | 수블록</p>
+												<p class="t2">미션 카드에 제시된 문제를 보고, 수 배열표의 수 블록을 앞으로 당기면서 수의 배열과 규칙에 대한 개념을
+													이해한다.</p>
 											</div>
-											<p class="bg">&nbsp;</p>
-										</div>
+										</a>
+										<a href="#" class="more"><img src="../img/ico_banner_more.png" alt=""></a>
 									</div>
 									<div class="slide_cont">
-										<p class="img"><img src="../img/sample_img_1.jpg" alt=""></p>
-										<div class="txts">
-											<p class="t1">올록볼록 | 수블록</p>
-											<p class="t2">미션 카드에 제시된 문제를 보고, 수 배열표의 수 블록을 앞으로 당기면서 수의 배열과 규칙에 대한 개념을
-												이해한다.</p>
-										</div>
-										<a href="#" class="more"><img src="../img/ico_banner_more.png" alt=""></a>
-										<div class="hover">
-											<div>
-												<p class="center">center text</p>
-												<a href="#">버튼</a>
+										<a href="#" class="c">
+											<p class="img"><img src="../img/sample_img_1.jpg" alt=""></p>
+											<div class="txts">
+												<p class="t1">올록볼록 | 수블록</p>
+												<p class="t2">미션 카드에 제시된 문제를 보고, 수 배열표의 수 블록을 앞으로 당기면서 수의 배열과 규칙에 대한 개념을
+													이해한다.</p>
 											</div>
-											<p class="bg">&nbsp;</p>
-										</div>
+										</a>
+										<a href="#" class="more"><img src="../img/ico_banner_more.png" alt=""></a>
 									</div>
 									<div class="slide_cont">
-										<p class="img"><img src="../img/sample_img_1.jpg" alt=""></p>
-										<div class="txts">
-											<p class="t1">올록볼록 | 수블록</p>
-											<p class="t2">미션 카드에 제시된 문제를 보고, 수 배열표의 수 블록을 앞으로 당기면서 수의 배열과 규칙에 대한 개념을
-												이해한다.</p>
-										</div>
-										<a href="#" class="more"><img src="../img/ico_banner_more.png" alt=""></a>
-										<div class="hover">
-											<div>
-												<p class="center">center text</p>
-												<a href="#">버튼</a>
+										<a href="#" class="c">
+											<p class="img"><img src="../img/sample_img_1.jpg" alt=""></p>
+											<div class="txts">
+												<p class="t1">올록볼록 | 수블록</p>
+												<p class="t2">미션 카드에 제시된 문제를 보고, 수 배열표의 수 블록을 앞으로 당기면서 수의 배열과 규칙에 대한 개념을
+													이해한다.</p>
 											</div>
-											<p class="bg">&nbsp;</p>
-										</div>
+										</a>
+										<a href="#" class="more"><img src="../img/ico_banner_more.png" alt=""></a>
 									</div>
 									<div class="slide_cont">
-										<p class="img"><img src="../img/sample_img_1.jpg" alt=""></p>
-										<div class="txts">
-											<p class="t1">올록볼록 | 수블록</p>
-											<p class="t2">미션 카드에 제시된 문제를 보고, 수 배열표의 수 블록을 앞으로 당기면서 수의 배열과 규칙에 대한 개념을
-												이해한다.</p>
-										</div>
-										<a href="#" class="more"><img src="../img/ico_banner_more.png" alt=""></a>
-										<div class="hover">
-											<div>
-												<p class="center">center text</p>
-												<a href="#">버튼</a>
+										<a href="#" class="c">
+											<p class="img"><img src="../img/sample_img_1.jpg" alt=""></p>
+											<div class="txts">
+												<p class="t1">올록볼록 | 수블록</p>
+												<p class="t2">미션 카드에 제시된 문제를 보고, 수 배열표의 수 블록을 앞으로 당기면서 수의 배열과 규칙에 대한 개념을
+													이해한다.</p>
 											</div>
-											<p class="bg">&nbsp;</p>
-										</div>
+										</a>
+										<a href="#" class="more"><img src="../img/ico_banner_more.png" alt=""></a>
 									</div>
 								</div>
 							</div>
 							<script>
-								$('.gallSlider').bxSlider({
-									auto: false,
-									autoControls: false,
-									stopAutoOnClick: true,
-									pager: true,
-									maxSlides: 4,
-									moveSlides: 1,
-									infiniteLoop: true,
-									slideMargin: 40,
-									slideWidth: 220
-								});	
+								if (navigator.userAgent.match(/Android|Mobile|iP(hone|od|ad)|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/)) {
+									//모바일(스마트폰+태블릿)일 때 실행 될 스크립트
+									$('.gallSlider').bxSlider({
+										auto: false,
+										autoControls: false,
+										stopAutoOnClick: true,
+										pager: true,
+										maxSlides: 1,
+										moveSlides: 1,
+										infiniteLoop: true
+									});	
+								} else {
+									//웹
+									$('.gallSlider').bxSlider({
+										auto: false,
+										autoControls: false,
+										stopAutoOnClick: true,
+										pager: true,
+										maxSlides: 4,
+										moveSlides: 1,
+										infiniteLoop: true,
+										slideMargin: 40,
+										slideWidth: 220
+									});	
+								}
+								
 							</script>
 						</div>
 					</div>
@@ -361,14 +376,7 @@
 													일본에서는 5월 5일이지만, 나라와 종교·문화권 등에 따라</p>
 											</a>
 										</li>
-										<li>
-											<a href="#">
-												<p class="t1">2019- 5- 5 어린이날 기념행사</p>
-												<p class="t2">어린이날(영어: Children's Day)은 여러 나라에서 기념일로 정해져 있는 날로, 이 날에는
-													특별히 부모들이 어린이들과 함께 시간을 보내거나, 어린이가 평소에 가지고 싶어했던 물건 등을 선물해주기도 한다. 대한민국과
-													일본에서는 5월 5일이지만, 나라와 종교·문화권 등에 따라</p>
-											</a>
-										</li>
+										
 									</ul>
 								</div>
 							</div>
@@ -445,7 +453,7 @@
 								<div class="boxs">
 									<p class="txt1">휴관일</p>
 									<ul>
-										<li><span class="bl gray_bg">&nbsp;</span>매주 월요일, 공휴일<br/>
+										<li><span class="bl gray_bg">&nbsp;</span>매주 월요일, 공휴일<br />
 											<span class="s">(공유일이 월요일인 경우 화요일 휴관)</span></li>
 										<li><span class="bl gray_bg">&nbsp;</span>1월 1일,설날, 추석</li>
 									</ul>
@@ -453,7 +461,7 @@
 							</div>
 						</div>
 					</div>
-					
+
 				</div>
 			</div>
 			<!-- 로고 -->
@@ -475,7 +483,7 @@
 		<div id="footer_wrap">
 			<div class="wsize">
 				<div class="msize">
-					<h2><a href="#"><img src="../img/foot_logo.png" alt=""></a></h2>
+					<h2 class="foot_logo"><a href="#"><img src="../img/foot_logo.png" alt=""></a></h2>
 					<div class="foots">
 						<p class="mb10">
 							<a href="#">이용약관</a>
@@ -484,12 +492,12 @@
 							<span>|</span>
 							<a href="javascript://" class="jQPop_private2">이메일무단수신거부</a>
 						</p>
-						<p class="address mb10">서울시 노원구 중계동 453-10    TEL 02 - 2116 - 2181 FAX 02-2116-4869</p>
+						<p class="address mb10">서울시 노원구 중계동 453-10 TEL 02 - 2116 - 2181 FAX 02-2116-4869</p>
 						<p class="copy">Copyright © 2018. NOWON Mathmatics Culture Center All Rights Reserved.</p>
 					</div>
 					<p class="sns">
-						<a href="#"><img src="../img/foot_blog.png"alt=""></a>
-						<a href="#"><img src="../img/foot_facebook.png"alt=""></a>
+						<a href="#"><img src="../img/foot_blog.png" alt=""></a>
+						<a href="#"><img src="../img/foot_facebook.png" alt=""></a>
 					</p>
 					<p id="back-top" class="btnTop"><a href="javascript://"><img src="../img/common/ico_top.gif"
 								alt="top"></a></p>
@@ -512,7 +520,7 @@
 			다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역
 		</p>
 		<p class="center"><button class="sm_blue_btn2 clo">닫기</button></p>
-		<p class="pop_clo"><a href="javascript://" class="clo"><img src="../img/common/pop_close.gif" alt="닫기"></a></p>
+		<p class="pop_clo"><a href="javascript://" class="clo"><img src="../img/pop_close.png" alt="닫기"></a></p>
 	</div>
 	<div class="pop_wrap pop_eula">
 		<p class="pop_tit">이용약관</p>
@@ -526,7 +534,7 @@
 			다.내용이 들어가는 영역입니다.내용이 들어가는 영역입니다.내용이 들어가는 영역
 		</p>
 		<p class="center"><button class="sm_blue_btn2 clo">닫기</button></p>
-		<p class="pop_clo"><a href="javascript://" class="clo"><img src="../img/common/pop_close.gif" alt="닫기"></a></p>
+		<p class="pop_clo"><a href="javascript://" class="clo"><img src="../img/pop_close.png" alt="닫기"></a></p>
 	</div>
 	<!-- popup end -->
 

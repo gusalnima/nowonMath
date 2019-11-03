@@ -1,0 +1,139 @@
+.sign_view td,
+.sign_view th {
+  border: 1px solid #d0d0d0;
+  padding: 10px 20px;
+}
+.list_box li .txts span {
+  display: block;
+}
+.list_box li .txts span.t1 {
+  color: #949393;
+  font-family: Arial;
+  font-weight: 700;
+  margin-bottom: 11px;
+}
+.list_box li .txts span.t2 {
+  color: #615e5e;
+  font-size: 16px;
+  font-family: Arial;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+.list_box li .txts span.t3 {
+  color: #7d7d7d;
+  font-size: 15px;
+}
+.list_box li .txts span.t4 {
+  color: #ff9320;
+  font-size: 15px;
+  font-family: Arial;
+  font-weight: 700;
+  margin: 13px 0 14px;
+}
+.sign_view_size {
+  width: 1040px;
+  margin: 0 auto;
+}
+.sign_view {
+  margin-bottom: 7px;
+  width: 100%;
+}
+.sign_view th {
+  background: #f4f4f4;
+}
+.sign_view td {
+  text-align: left;
+}
+.sign_view td p {
+  line-height: 1.4em;
+}
+.sign_box .t,
+.sign_wview td div * {
+  line-height: 1.6em;
+}
+.sign_view td p a {
+  border-bottom: 1px solid #4581cd;
+  color: #1b65c2;
+}
+.sign_box,
+.sign_write td,
+.sign_write th {
+  border: 1px solid #d0d0d0;
+}
+.sign_view td.at {
+  padding: 5px 20px;
+}
+.sign_box {
+  padding: 20px 25px 125px;
+  position: relative;
+  margin-bottom: 25px;
+  background: url(../img/common/box_bg.gif) left top;
+}
+.sign_box .t {
+  font-size: 15px;
+  color: #767779;
+}
+.sign_box .sign {
+  position: absolute;
+  right: 20px;
+  bottom: 25px;
+  font-size: 15px;
+  color: #606163;
+}
+.sign_write {
+  margin-bottom: 7px;
+  width: 100%;
+  table-layout: fixed;
+}
+.sign_write th {
+  background: #f4f4f4;
+  padding: 5px 6px;
+}
+.sign_write th.bgw {
+  background: #fff;
+}
+.sign_write th.bgg {
+  background: #ececec;
+  font-size: 15px;
+  font-family: Arial;
+  font-weight: 700;
+  padding: 13px 0;
+}
+.sign_write td {
+  padding: 5px 6px;
+  text-align: left;
+}
+.sign_write td.at {
+  padding: 13px 6px;
+}
+.sign_write td span {
+  padding: 0 3px;
+}
+.sign_write td span.req {
+  background: url(../img/common/ico_req.png) left 4px no-repeat;
+  display: inline-block;
+  padding-left: 15px;
+  margin-left: 10px;
+}
+.sign_write2 {
+  border-top: 1px solid #363636;
+}
+.sign_write td .file_box {
+  display: inline-block;
+}
+.sign_write td span.bl {
+  background: url(../img/common/bl_blk_cir.gif) left 3px no-repeat;
+  padding-left: 17px;
+  display: inline-block;
+  margin-right: 20px;
+}
+.sign_wview th {
+  padding: 10px 6px;
+}
+.sign_wview td {
+  padding: 10px;
+}
+.sign_wview td div {
+  border: 1px solid silver;
+  padding: 10px;
+}

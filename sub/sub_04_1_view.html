@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <!-- 모바일 이미지 -->
+    <meta name="title" content="">
+
+    <link rel='stylesheet' href='../css/import.css' type='text/css' />
+
+    <script type="text/javascript" src="../js/jquery-1.8.1.js"></script>
+    <script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="../js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="../js/greensock/TweenMax.js"></script>
+    <script type="text/javascript" src="../js/greensock/TimelineLite.js"></script>
+    <script type="text/javascript" src="../js/greensock/easing/EasePack.js"></script>
+    <script type="text/javascript" src="../js/jquery.placeholder.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.js"></script>
+    <script type="text/javascript" src="../js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../js/respond.src.js"></script>
+    <script type="text/javascript" src="../js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/gnb.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+
+    <script type="text/javascript">
+        if (navigator.userAgent.match(/Android|Mobile|iP(hone|od|ad)|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/)) {
+            //모바일(스마트폰+태블릿)일 때 실행 될 스크립트
+            $('head').append('<link rel="stylesheet" href="../css/m_layout.css"  type="text/css" />');
+        }
+    </script>
+    <script type="text/javascript">
+
+        jQuery(document).ready(function () {
+            if (!navigator.userAgent.match(/Android|Mobile|iP(hone|od|ad)|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/)) {
+            } else {
+            }
+        });
+
+    </script>
+
+    <!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header_wrap">
+            <div class="header">
+                <div class="wsize">
+                    <div class="msize">
+                        <div class="top_util_link">
+                            <p class="t1"><a href="#">로그인</a></p>
+                            <p class="t2"><a href="#">회원가입</a></p>
+                            <p class="t3"><a href="#">고객센터</a></p>
+                        </div>
+                        <div class="gnb_wrap">
+                            <h1 class="logo"><a href="#"><img src="../img/logo.png" alt="노원 수학 문화관"></a></h1>
+                            <!-- 
+								메뉴 클릭했을때.. <div class="gnb active">
+							-->
+                            <div class="gnb">
+                                <ul class="dep1">
+                                    <li class="d1 d1a"><a href="javascript://">관람안내</a>
+                                        <div class="dep2 dep2_1">
+                                            <ul>
+                                                <li class="d2"><a href="#">이용안내</a></li>
+                                                <li class="d2"><a href="#">층별안내</a></li>
+                                                <li class="d2"><a href="#">시설안내</a></li>
+                                                <li class="d2"><a href="#">대관안내</a></li>
+                                                <li class="d2"><a href="#">주차안내</a></li>
+                                                <li class="d2"><a href="#">관람예약</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="d1 d1a"><a href="javascript://">전시안내</a>
+                                        <div class="dep2 dep2_2">
+                                            <ul>
+                                                <li class="d2"><a href="#">전시종합안내</a></li>
+                                                <li class="d2"><a href="#">기획전시공간(1층)</a></li>
+                                                <li class="d2"><a href="#">수학놀이터(1층)</a></li>
+                                                <li class="d2"><a href="#">수학과 세상(2층)</a></li>
+                                                <li class="d2"><a href="#">수학과 예술(3층)</a></li>
+                                                <li class="d2"><a href="#">야외</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="d1 d1a"><a href="javascript://">교육 및 행사</a>
+                                        <div class="dep2 dep2_3">
+                                            <ul>
+                                                <li class="d2"><a href="#">수학교육프로그램</a></li>
+                                                <li class="d2"><a href="#">수학문화행사</a></li>
+                                                <li class="d2"><a href="#">수학봉사 서포터즈</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="d1 d1a"><a href="javascript://">매스휴먼북</a>
+                                        <div class="dep2 dep2_4">
+                                            <ul>
+                                                <li class="d2"><a href="#">참가 신청</a></li>
+                                                <li class="d2"><a href="#">개설 신청</a></li>
+                                                <li class="d2"><a href="#">강사 등록</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="d1 d1a"><a href="javascript://">소통마당</a>
+                                        <div class="dep2 dep2_5">
+                                            <ul>
+                                                <li class="d2"><a href="#">공지사항</a></li>
+                                                <li class="d2"><a href="#">뉴스 및 소식</a></li>
+                                                <li class="d2"><a href="#">Q & A</a></li>
+                                                <li class="d2"><a href="#">자료실</a></li>
+                                                <li class="d2"><a href="#">소식지</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="d1 d1a"><a href="javascript://">열린시설</a>
+                                        <div class="dep2 dep2_6">
+                                            <ul>
+                                                <li class="d2"><a href="#">드라이시네마(영화관)</a></li>
+                                                <li class="d2"><a href="#">시그마자료실(도서관)</a></li>
+                                                <li class="d2"><a href="#">트라이교구판매샵</a></li>
+                                                <li class="d2"><a href="#">카페테리아</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="d1 d1a"><a href="javascript://">수학문화관 소개</a>
+                                        <div class="dep2 dep2_7">
+                                            <ul>
+                                                <li class="d2"><a href="#">인사말</a></li>
+                                                <li class="d2"><a href="#">일반현황</a></li>
+                                                <li class="d2"><a href="#">조직도</a></li>
+                                                <li class="d2"><a href="#">찾아오시는 길</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="d1 d1a"><a href="javascript://">서비스정책</a>
+                                        <div class="dep2 dep2_8">
+                                            <ul>
+                                                <li class="d2"><a href="#">이용약관</a></li>
+                                                <li class="d2"><a href="#">개인정보처리방침</a></li>
+                                                <li class="d2"><a href="#">법적고지</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="ico_menu jQMenu"><a href="javascript://"><img src="../img/ico_menu.png"
+                                        alt="메뉴"></a></p>
+                        </div>
+                        <!--gnb_wrap-->
+                    </div>
+                </div>
+                <div class="gnb_bg">&nbsp;</div>
+            </div>
+        </div> <!-- header -->
+        <div id="contentWrap">
+            <div class="wsize">
+                <div class="msize">
+                    <div class="sub_content">
+                        <h3 class="tit">참 여 신 청</h3>
+                        <div class="sign_top_view">
+                            <div class="sign_top_left">
+                                <p class="img"><img src="../img/thumb_img.jpg" alt="image"></p>
+                                <p class="txt"><span>[예체능]</span>연필소묘/수채화(토요)</p>
+                            </div>
+                            <div class="sign_top_right">
+                                <div class="boxs">
+                                    <ul class="sign_list sign_two">
+                                        <li class="s1">개설 : 김정기</li>
+                                        <li class="s3">기간 : 2019.11.16 ~ 2020.02.08</li>
+                                    </ul>
+                                </div>
+                                <div class="boxs boxs_1">
+                                    <p class="txts">선생님은 홍익대학교 미술대학 서양화과를 졸업, 동대학원 애니메이션전공 졸업,
+                                        한양여대 일러스트레이션과 교수를 역임했습니다.
+                                        이 강좌는 내신 수행평가 대비를 위한 기초소묘와 수채화 표현방법을 신장시켜 발전시킵니다. 이미지 표현에 있어서 객관적인 사물을 정확하게 관찰하고
+                                        이해하여 대담하게 표현 할 수 있습니다.
+                                        개인수준에 맞는 개별수업을 진행합니다. 체계적인 단계별 수업을 진행합니다.
+                                        수강생의 95%가 자신감을 갖게 됩니다
+                                    </p>
+                                </div>
+                                <div class="boxs">
+                                    <ul class="sign_list">
+                                        <li class="s4">장소 : 상계주공3단지 문화센타 미술교실 상계6,7동 737번지</li>
+                                    </ul>
+                                </div>
+                                <div class="boxs">
+                                    <ul class="sign_list sign_two">
+                                        <li class="s2">대상 : 미취학 0/초등 5/중등 5/고등 0/성인 0</li>
+                                        <li class="s2">비고 : </li>
+                                    </ul>
+                                </div>
+                                <div class="boxs">
+                                    <ul class="sign_list">
+                                        <li class="s4">일정 : 매주 토요일 09:30~11:00 </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="def_table_wrap">
+                            <div class="table_scroll">
+                                <table class="sign_view mb17">
+                                    <caption></caption>
+                                    <colgroup>
+                                        <col style="width:7%">
+                                        <col style="width:13%">
+                                        <col style="width:15%">
+                                        <col>
+                                        <col style="width:15%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>회차</th>
+                                            <th>날짜</th>
+                                            <th>주제</th>
+                                            <th>내용 (회수 : 12회 * 90분)</th>
+                                            <th>준비/유의사항</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="center">1</td>
+                                            <td class="center">2019.11.16</td>
+                                            <td>정육면체도형그리기</td>
+                                            <td>형태잡는방법 및 사물을 읽는 방법 </td>
+                                            <td class="center"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center">2</td>
+                                            <td class="center">2019.11.23</td>
+                                            <td>원기둥 그리기</td>
+                                            <td>형태. 밝은면. 중간면. 어두운면. 그림자</td>
+                                            <td class="center"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center">3</td>
+                                            <td class="center">2019.11.30</td>
+                                            <td>원구 그리기</td>
+                                            <td>형태. 밝은면. 중간면. 어두운면. 그림자</td>
+                                            <td class="center"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center">4</td>
+                                            <td class="center">2019.12.07</td>
+                                            <td>연필 색면 10단계 연습</td>
+                                            <td>연필색감 10단계 표현하기</td>
+                                            <td class="center"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center">5</td>
+                                            <td class="center">2019.12.14</td>
+                                            <td>벽돌 그리기</td>
+                                            <td>형태. 양감. 질감. 거리감 표현하기</td>
+                                            <td class="center"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center">6</td>
+                                            <td class="center">2019.12.21</td>
+                                            <td>휴지 그리기</td>
+                                            <td>형태. 양감. 질감. 거리감 표현하기</td>
+                                            <td class="center"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center">7</td>
+                                            <td class="center">2019.12.28</td>
+                                            <td>사과 그리기</td>
+                                            <td>형태. 양감. 질감. 거리감 표현하기</td>
+                                            <td class="center"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center">8</td>
+                                            <td class="center">2020.01.04</td>
+                                            <td>꽃병 수채화 그리기</td>
+                                            <td>꽃병을 안정감 있게 그리기 </td>
+                                            <td class="center"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center">9</td>
+                                            <td class="center">2020.01.11</td>
+                                            <td>풍경수채화 그리기</td>
+                                            <td>시골, 산촌, 바다 풍경 그리기</td>
+                                            <td class="center"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center">10</td>
+                                            <td class="center">2020.01.18</td>
+                                            <td>과일 수채화 그리기 </td>
+                                            <td>과일을 풍성하고 안정감 있게 그리기</td>
+                                            <td class="center"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center">11</td>
+                                            <td class="center">2020.02.01</td>
+                                            <td>인물 수채화 그리기</td>
+                                            <td>사진 보고 그리기 </td>
+                                            <td class="center"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="center">12</td>
+                                            <td class="center">2020.02.08</td>
+                                            <td>동물 그리기 </td>
+                                            <td>좋아하는 동물사진 보고 닮게 묘사하기</td>
+                                            <td class="center"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <table class="sign_view mb17">
+                                    <caption></caption>
+                                    <colgroup>
+                                        <col style="width:20%">
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>추가비용 / 유의사항</th>
+                                            <td>이 강좌는 초등생3학년~중학생을 대상으로 합니다.
+                                                수업에 필요한 재료비3개월 6만원을 첫 수업 전까지 입금해주세요.
+                                                농협 김정기 312-0033-0479-61 문의사항이나 궁굼하신점 010-3260-2220
+                                                으로 연락주시면 감사하겠습니다.
+                                                수업에 사용하는 미술재료: 5절스케치북. 4B연필. 미술용지우개Tombow.
+                                                수성색연필. 유성색연필. 신한전문수채화물감. 화홍수채화붓. 파레트. 물통
+                                                모든 미술재료는 미술교실에서 준비합니다! ♥프로그램은 기초수업이후 개인취향으로 다를 수 있습니다.
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <table class="sign_view">
+                                    <caption></caption>
+                                    <colgroup>
+                                        <col style="width:20%">
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>첨부문서</th>
+                                            <td>
+                                                <p><a href="#">소묘수채화재료비.xlsx</a></p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <p class="right"><button class="btn_purple">입학신청</button> <button class="btn_gray">목록으로</button>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <!-- 로고 -->
+            <div class="family_wrap">
+                <div class="wsize">
+                    <div class="msize">
+                        <ul class="family">
+                            <li><img src="../img/foot_ico_1.jpg" alt=""></li>
+                            <li><img src="../img/foot_ico_2.jpg" alt=""></li>
+                            <li><img src="../img/foot_ico_3.jpg" alt=""></li>
+                            <li><img src="../img/foot_ico_4.jpg" alt=""></li>
+                            <li><img src="../img/foot_ico_5.jpg" alt=""></li>
+                            <li><img src="../img/foot_ico_6.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer_wrap">
+            <div class="wsize">
+                <div class="msize">
+                    <h2 class="foot_logo"><a href="#"><img src="../img/foot_logo.png" alt=""></a></h2>
+                    <div class="foots">
+                        <p class="mb10">
+                            <a href="#">이용약관</a>
+                            <span>|</span>
+                            <a href="javascript://" class="jQPop_private1">개인정보처리방침</a>
+                            <span>|</span>
+                            <a href="javascript://" class="jQPop_private2">이메일무단수신거부</a>
+                        </p>
+                        <p class="address mb10">서울시 노원구 중계동 453-10 TEL 02 - 2116 - 2181 FAX 02-2116-4869</p>
+                        <p class="copy">Copyright © 2018. NOWON Mathmatics Culture Center All Rights Reserved.</p>
+                    </div>
+                    <p class="sns">
+                        <a href="#"><img src="../img/foot_blog.png" alt=""></a>
+                        <a href="#"><img src="../img/foot_facebook.png" alt=""></a>
+                    </p>
+                    <p id="back-top" class="btnTop"><a href="javascript://"><img src="../img/common/ico_top.gif"
+                                alt="top"></a></p>
+                </div>
+            </div>
+        </div>
+    </div> <!-- widsize -->
+
+
+
+    <!-- mobile menu -->
+    <div class="all_menu_wrap">
+        <div class="all_menu">
+            <ul class="dep1">
+                <li class="d1 d1a"><a href="javascript://">관람안내</a>
+                    <div class="dep2_wrap">
+                        <ul class="dep2">
+                            <li class="d2"><a href="#">이용안내</a></li>
+                            <li class="d2"><a href="#">층별안내</a></li>
+                            <li class="d2"><a href="#">시설안내</a></li>
+                            <li class="d2"><a href="#">대관안내</a></li>
+                            <li class="d2"><a href="#">주차안내</a></li>
+                            <li class="d2"><a href="#">관람예약</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="d1 d1a"><a href="javascript://">전시안내</a>
+                    <div class="dep2_wrap">
+                        <ul class="dep2">
+                            <li class="d2"><a href="#">전시종합안내</a></li>
+                            <li class="d2"><a href="#">기획전시공간(1층)</a></li>
+                            <li class="d2"><a href="#">수학놀이터(1층)</a></li>
+                            <li class="d2"><a href="#">수학과 세상(2층)</a></li>
+                            <li class="d2"><a href="#">수학과 예술(3층)</a></li>
+                            <li class="d2"><a href="#">야외</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="d1 d1a"><a href="javascript://">교육 및 행사</a>
+                    <div class="dep2_wrap">
+                        <ul class="dep2">
+                            <li class="d2"><a href="#">수학교육프로그램</a></li>
+                            <li class="d2"><a href="#">수학문화행사</a></li>
+                            <li class="d2"><a href="#">수학봉사 서포터즈</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="d1 d1a"><a href="javascript://">매스휴먼북</a>
+                    <div class="dep2_wrap">
+                        <ul class="dep2">
+                            <li class="d2"><a href="#">참가 신청</a></li>
+                            <li class="d2"><a href="#">개설 신청</a></li>
+                            <li class="d2"><a href="#">강사 등록</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="d1 d1a"><a href="javascript://">소통마당</a>
+                    <div class="dep2_wrap">
+                        <ul class="dep2">
+                            <li class="d2"><a href="#">공지사항</a></li>
+                            <li class="d2"><a href="#">뉴스 및 소식</a></li>
+                            <li class="d2"><a href="#">Q & A</a></li>
+                            <li class="d2"><a href="#">자료실</a></li>
+                            <li class="d2"><a href="#">소식지</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="d1 d1a"><a href="javascript://">열린시설</a>
+                    <div class="dep2_wrap">
+                        <ul class="dep2">
+                            <li class="d2"><a href="#">드라이시네마(영화관)</a></li>
+                            <li class="d2"><a href="#">시그마자료실(도서관)</a></li>
+                            <li class="d2"><a href="#">트라이교구판매샵</a></li>
+                            <li class="d2"><a href="#">카페테리아</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="d1 d1a"><a href="javascript://">수학문화관 소개</a>
+                    <div class="dep2_wrap">
+                        <ul class="dep2">
+                            <li class="d2"><a href="#">인사말</a></li>
+                            <li class="d2"><a href="#">일반현황</a></li>
+                            <li class="d2"><a href="#">조직도</a></li>
+                            <li class="d2"><a href="#">찾아오시는 길</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="d1 d1a"><a href="javascript://">서비스정책</a>
+                    <div class="dep2_wrap">
+                        <ul class="dep2">
+                            <li class="d2"><a href="#">이용약관</a></li>
+                            <li class="d2"><a href="#">개인정보처리방침</a></li>
+                            <li class="d2"><a href="#">법적고지</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- mobile menu end -->
+
+
+    <div class="ly_pop_bg">&nbsp;</div>
+    <div class="black_bg">&nbsp;</div>
+    <a href="javascript://" class="jQMenu_close"><img src="../img/common/menu_close_web.png" alt="메뉴 닫기"></a>
+</body>
+
+</html>

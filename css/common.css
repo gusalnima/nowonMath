@@ -186,13 +186,15 @@ a:active { text-decoration: none; color:#000; }
 /* paging */
 
 .paging { text-align:center; position:relative;}
-.paging * { font-family: dotum; font-weight: bold; color:#c0c0c0; }
-.paging a { display:inline-block; font-size: 12px; vertical-align: top; border:none; width:25px; text-align:center; padding: 5px 0 4px; height: 14px; color:#454545; }
-.paging span { display:inline-block; font-size: 12px; vertical-align: top; border:none; width:25px; text-align:center; padding: 5px 0 4px; height: 14px; color:#0767d2; }
+.paging * { font-family: dotum; color:#c0c0c0; }
+.paging a { display:inline-block; font-size: 14px; vertical-align: top; border:none; width:25px; text-align:center; padding: 5px 0 4px; height: 14px; color:#454545; }
+.paging span { display:inline-block; font-size: 14px; vertical-align: top; border:none; width:25px; text-align:center; padding: 5px 0 4px; height: 14px; color:#0767d2; }
 .paging a:hover { border:none; color:#0767d2;  }
 .paging a.crrnt {font-weight:bold; color:#0767d2; }
-.paging a.btn_p { background: url(../img/common/page_p.gif) no-repeat left top; width:25px; height:23px; text-indent: -1000px; overflow:hidden; padding:0; }
-.paging a.btn_n { background: url(../img/common/page_n.gif) no-repeat left top; width:25px; height:23px; text-indent: -1000px; overflow:hidden; padding:0; }
+.paging a.btn_p { background: url(../img/btn_p.gif) no-repeat left top; width:25px; height:25px; background-size:100%; text-indent: -1000px; overflow:hidden; padding:0; }
+.paging a.btn_n { background: url(../img/btn_n.gif) no-repeat left top; width:25px; height:25px; background-size:100%; text-indent: -1000px; overflow:hidden; padding:0; }
+.paging a.btn_pp { background: url(../img/btn_pp.gif) no-repeat left top; width:25px; height:25px; background-size:100%; text-indent: -1000px; overflow:hidden; padding:0; }
+.paging a.btn_nn { background: url(../img/btn_nn.gif) no-repeat left top; width:25px; height:25px; background-size:100%; text-indent: -1000px; overflow:hidden; padding:0; }
 
 /* etc. */
 
@@ -496,6 +498,7 @@ a:active { text-decoration: none; color:#000; }
 .ml50 { margin-left:50px !important; }
 .ml42 { margin-left:42px !important; }
 .ml70 { margin-left:70px !important; }
+.ml80 { margin-left:80px !important; }
 .ml230 { margin-left:230px !important; }
 .ml256 { margin-left:256px !important; }
 

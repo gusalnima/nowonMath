@@ -141,7 +141,7 @@ jQuery.fn.sy_modalApi = function() {
 
   jQuery(obj_bg).css({ width: wwidth, height: wheight });
   /* 중앙 */
-  jQuery(obj).css({ left: ww_h, top: wh_h });
+  // jQuery(obj).css({ left: ww_h, top: wh_h });
   /* 좌우만 센터 */
   //jQuery(obj).css({'left':ww_h,'height':wheight});
 
@@ -164,7 +164,7 @@ jQuery.fn.sy_modalApi = function() {
     jQuery(obj_bg).css({ width: wwidth, height: wheight });
     //jQuery(int_bg).css({'width':wwidth,'height':wheight});
     /* 중앙 */
-    jQuery(obj).css({ left: ww_h, top: wh_h });
+    // jQuery(obj).css({ left: ww_h, top: wh_h });
     /* 좌우만 센터 */
     // jQuery(obj).css({'left':ww_h,'height':wheight});
   });

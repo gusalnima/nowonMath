@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <!-- 모바일 이미지 -->
+    <meta name="title" content="">
+
+    <link rel='stylesheet' href='../css/import.css' type='text/css' />
+
+    <script type="text/javascript" src="../js/jquery-1.8.1.js"></script>
+    <script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="../js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="../js/greensock/TweenMax.js"></script>
+    <script type="text/javascript" src="../js/greensock/TimelineLite.js"></script>
+    <script type="text/javascript" src="../js/greensock/easing/EasePack.js"></script>
+    <script type="text/javascript" src="../js/jquery.placeholder.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.js"></script>
+    <script type="text/javascript" src="../js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../js/respond.src.js"></script>
+    <script type="text/javascript" src="../js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/gnb.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+
+    <script type="text/javascript">
+        if (navigator.userAgent.match(/Android|Mobile|iP(hone|od|ad)|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/)) {
+            //모바일(스마트폰+태블릿)일 때 실행 될 스크립트
+            $('head').append('<link rel="stylesheet" href="../css/m_layout.css"  type="text/css" />');
+        }
+    </script>
+    <script type="text/javascript">
+
+        jQuery(document).ready(function () {
+            if (!navigator.userAgent.match(/Android|Mobile|iP(hone|od|ad)|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/)) {
+            } else {
+            }
+        });
+
+    </script>
+
+    <!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header_wrap">
+            <div class="header">
+                <div class="wsize">
+                    <div class="msize">
+                        <div class="top_util_link">
+                            <p class="t1"><a href="#">로그인</a></p>
+                            <p class="t2"><a href="#">회원가입</a></p>
+                            <p class="t3"><a href="#">고객센터</a></p>
+                        </div>
+                        <div class="gnb_wrap">
+                            <h1 class="logo"><a href="#"><img src="../img/logo.png" alt="노원 수학 문화관"></a></h1>
+                            <!-- 
+								메뉴 클릭했을때.. <div class="gnb active">
+							-->
+                            <div class="gnb">
+                                <ul class="dep1">
+                                    <li class="d1 d1a"><a href="javascript://">관람안내</a>
+                                        <div class="dep2 dep2_1">
+                                            <ul>
+                                                <li class="d2"><a href="#">이용안내</a></li>
+                                                <li class="d2"><a href="#">층별안내</a></li>
+                                                <li class="d2"><a href="#">시설안내</a></li>
+                                                <li class="d2"><a href="#">대관안내</a></li>
+                                                <li class="d2"><a href="#">주차안내</a></li>
+                                                <li class="d2"><a href="#">관람예약</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="d1 d1a"><a href="javascript://">전시안내</a>
+                                        <div class="dep2 dep2_2">
+                                            <ul>
+                                                <li class="d2"><a href="#">전시종합안내</a></li>
+                                                <li class="d2"><a href="#">기획전시공간(1층)</a></li>
+                                                <li class="d2"><a href="#">수학놀이터(1층)</a></li>
+                                                <li class="d2"><a href="#">수학과 세상(2층)</a></li>
+                                                <li class="d2"><a href="#">수학과 예술(3층)</a></li>
+                                                <li class="d2"><a href="#">야외</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="d1 d1a"><a href="javascript://">교육 및 행사</a>
+                                        <div class="dep2 dep2_3">
+                                            <ul>
+                                                <li class="d2"><a href="#">수학교육프로그램</a></li>
+                                                <li class="d2"><a href="#">수학문화행사</a></li>
+                                                <li class="d2"><a href="#">수학봉사 서포터즈</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="d1 d1a"><a href="javascript://">매스휴먼북</a>
+                                        <div class="dep2 dep2_4">
+                                            <ul>
+                                                <li class="d2"><a href="#">참가 신청</a></li>
+                                                <li class="d2"><a href="#">개설 신청</a></li>
+                                                <li class="d2"><a href="#">강사 등록</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="d1 d1a"><a href="javascript://">소통마당</a>
+                                        <div class="dep2 dep2_5">
+                                            <ul>
+                                                <li class="d2"><a href="#">공지사항</a></li>
+                                                <li class="d2"><a href="#">뉴스 및 소식</a></li>
+                                                <li class="d2"><a href="#">Q & A</a></li>
+                                                <li class="d2"><a href="#">자료실</a></li>
+                                                <li class="d2"><a href="#">소식지</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="d1 d1a"><a href="javascript://">열린시설</a>
+                                        <div class="dep2 dep2_6">
+                                            <ul>
+                                                <li class="d2"><a href="#">드라이시네마(영화관)</a></li>
+                                                <li class="d2"><a href="#">시그마자료실(도서관)</a></li>
+                                                <li class="d2"><a href="#">트라이교구판매샵</a></li>
+                                                <li class="d2"><a href="#">카페테리아</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="d1 d1a"><a href="javascript://">수학문화관 소개</a>
+                                        <div class="dep2 dep2_7">
+                                            <ul>
+                                                <li class="d2"><a href="#">인사말</a></li>
+                                                <li class="d2"><a href="#">일반현황</a></li>
+                                                <li class="d2"><a href="#">조직도</a></li>
+                                                <li class="d2"><a href="#">찾아오시는 길</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="d1 d1a"><a href="javascript://">서비스정책</a>
+                                        <div class="dep2 dep2_8">
+                                            <ul>
+                                                <li class="d2"><a href="#">이용약관</a></li>
+                                                <li class="d2"><a href="#">개인정보처리방침</a></li>
+                                                <li class="d2"><a href="#">법적고지</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="ico_menu jQMenu"><a href="javascript://"><img src="../img/ico_menu.png"
+                                        alt="메뉴"></a></p>
+                        </div>
+                        <!--gnb_wrap-->
+                    </div>
+                </div>
+                <div class="gnb_bg">&nbsp;</div>
+            </div>
+        </div> <!-- header -->
+        <div id="contentWrap">
+            <div class="wsize">
+                <div class="msize">
+                    <div class="sub_content">
+                        <h3 class="tit">층 별 안 내</h3>
+                        <p class="bl_tit"><span class="bl red_bg">&nbsp;</span>층별 안내</p>
+                        <table class="default_tb mb20">
+                            <caption>층별 안내</caption>
+                            <colgroup>
+                                <col style="width:20%" />
+                                <col style="" />
+                            </colgroup>
+                            <tr>
+                                <th class="td">야외</th>
+                                <td>어울림마당, 수학의 정원 </td>
+                            </tr>
+                            <tr>
+                                <th class="td">1층</th>
+                                <td>수학놀이터, 기획전시공간, 트라이 교구판매샵, 카페테리아</td>
+                            </tr>
+                            <tr>
+                                <th class="td">2층</th>
+                                <td>수학과세상, 시그마 자료실</td>
+                            </tr>
+                            <tr>
+                                <th class="td">3층</th>
+                                <td>수학과예술, 연구공작실, 트라이 시네마</td>
+                            </tr>
+                            <tr>
+                                <th class="td">4층</th>
+                                <td>χ·ｙ·ｚ 강의실, 다목적실, 관장실, 사무실</td>
+                            </tr>
+                            <tr>
+                                <th class="td">옥외</th>
+                                <td>도시락카페</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- 로고 -->
+            <div class="family_wrap">
+                <div class="wsize">
+                    <div class="msize">
+                        <ul class="family">
+                            <li><img src="../img/foot_ico_1.jpg" alt=""></li>
+                            <li><img src="../img/foot_ico_2.jpg" alt=""></li>
+                            <li><img src="../img/foot_ico_3.jpg" alt=""></li>
+                            <li><img src="../img/foot_ico_4.jpg" alt=""></li>
+                            <li><img src="../img/foot_ico_5.jpg" alt=""></li>
+                            <li><img src="../img/foot_ico_6.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer_wrap">
+            <div class="wsize">
+                <div class="msize">
+                    <h2 class="foot_logo"><a href="#"><img src="../img/foot_logo.png" alt=""></a></h2>
+                    <div class="foots">
+                        <p class="mb10">
+                            <a href="#">이용약관</a>
+                            <span>|</span>
+                            <a href="javascript://" class="jQPop_private1">개인정보처리방침</a>
+                            <span>|</span>
+                            <a href="javascript://" class="jQPop_private2">이메일무단수신거부</a>
+                        </p>
+                        <p class="address mb10">서울시 노원구 중계동 453-10 TEL 02 - 2116 - 2181 FAX 02-2116-4869</p>
+                        <p class="copy">Copyright © 2018. NOWON Mathmatics Culture Center All Rights Reserved.</p>
+                    </div>
+                    <p class="sns">
+                        <a href="#"><img src="../img/foot_blog.png" alt=""></a>
+                        <a href="#"><img src="../img/foot_facebook.png" alt=""></a>
+                    </p>
+                    <p id="back-top" class="btnTop"><a href="javascript://"><img src="../img/common/ico_top.gif"
+                                alt="top"></a></p>
+                </div>
+            </div>
+        </div>
+    </div> <!-- widsize -->
+
+
+
+    <!-- mobile menu -->
+    <div class="all_menu_wrap">
+        <div class="all_menu">
+            <ul class="dep1">
+                <li class="d1 d1a"><a href="javascript://">관람안내</a>
+                    <div class="dep2_wrap">
+                        <ul class="dep2">
+                            <li class="d2"><a href="#">이용안내</a></li>
+                            <li class="d2"><a href="#">층별안내</a></li>
+                            <li class="d2"><a href="#">시설안내</a></li>
+                            <li class="d2"><a href="#">대관안내</a></li>
+                            <li class="d2"><a href="#">주차안내</a></li>
+                            <li class="d2"><a href="#">관람예약</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="d1 d1a"><a href="javascript://">전시안내</a>
+                    <div class="dep2_wrap">
+                        <ul class="dep2">
+                            <li class="d2"><a href="#">전시종합안내</a></li>
+                            <li class="d2"><a href="#">기획전시공간(1층)</a></li>
+                            <li class="d2"><a href="#">수학놀이터(1층)</a></li>
+                            <li class="d2"><a href="#">수학과 세상(2층)</a></li>
+                            <li class="d2"><a href="#">수학과 예술(3층)</a></li>
+                            <li class="d2"><a href="#">야외</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="d1 d1a"><a href="javascript://">교육 및 행사</a>
+                    <div class="dep2_wrap">
+                        <ul class="dep2">
+                            <li class="d2"><a href="#">수학교육프로그램</a></li>
+                            <li class="d2"><a href="#">수학문화행사</a></li>
+                            <li class="d2"><a href="#">수학봉사 서포터즈</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="d1 d1a"><a href="javascript://">매스휴먼북</a>
+                    <div class="dep2_wrap">
+                        <ul class="dep2">
+                            <li class="d2"><a href="#">참가 신청</a></li>
+                            <li class="d2"><a href="#">개설 신청</a></li>
+                            <li class="d2"><a href="#">강사 등록</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="d1 d1a"><a href="javascript://">소통마당</a>
+                    <div class="dep2_wrap">
+                        <ul class="dep2">
+                            <li class="d2"><a href="#">공지사항</a></li>
+                            <li class="d2"><a href="#">뉴스 및 소식</a></li>
+                            <li class="d2"><a href="#">Q & A</a></li>
+                            <li class="d2"><a href="#">자료실</a></li>
+                            <li class="d2"><a href="#">소식지</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="d1 d1a"><a href="javascript://">열린시설</a>
+                    <div class="dep2_wrap">
+                        <ul class="dep2">
+                            <li class="d2"><a href="#">드라이시네마(영화관)</a></li>
+                            <li class="d2"><a href="#">시그마자료실(도서관)</a></li>
+                            <li class="d2"><a href="#">트라이교구판매샵</a></li>
+                            <li class="d2"><a href="#">카페테리아</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="d1 d1a"><a href="javascript://">수학문화관 소개</a>
+                    <div class="dep2_wrap">
+                        <ul class="dep2">
+                            <li class="d2"><a href="#">인사말</a></li>
+                            <li class="d2"><a href="#">일반현황</a></li>
+                            <li class="d2"><a href="#">조직도</a></li>
+                            <li class="d2"><a href="#">찾아오시는 길</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="d1 d1a"><a href="javascript://">서비스정책</a>
+                    <div class="dep2_wrap">
+                        <ul class="dep2">
+                            <li class="d2"><a href="#">이용약관</a></li>
+                            <li class="d2"><a href="#">개인정보처리방침</a></li>
+                            <li class="d2"><a href="#">법적고지</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- mobile menu end -->
+
+
+    <div class="ly_pop_bg">&nbsp;</div>
+    <div class="black_bg">&nbsp;</div>
+    <a href="javascript://" class="jQMenu_close"><img src="../img/common/menu_close_web.png" alt="메뉴 닫기"></a>
+</body>
+
+</html>

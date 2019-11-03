@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <!-- 모바일 이미지 -->
+    <meta name="title" content="">
+
+    <link rel='stylesheet' href='../css/import.css' type='text/css' />
+
+    <script type="text/javascript" src="../js/jquery-1.8.1.js"></script>
+    <script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="../js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="../js/greensock/TweenMax.js"></script>
+    <script type="text/javascript" src="../js/greensock/TimelineLite.js"></script>
+    <script type="text/javascript" src="../js/greensock/easing/EasePack.js"></script>
+    <script type="text/javascript" src="../js/jquery.placeholder.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.js"></script>
+    <script type="text/javascript" src="../js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="../js/respond.src.js"></script>
+    <script type="text/javascript" src="../js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/gnb.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+
+    <script type="text/javascript">
+        if (navigator.userAgent.match(/Android|Mobile|iP(hone|od|ad)|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/)) {
+            //모바일(스마트폰+태블릿)일 때 실행 될 스크립트
+            $('head').append('<link rel="stylesheet" href="../css/m_layout.css"  type="text/css" />');
+        }
+    </script>
+    <script type="text/javascript">
+
+        jQuery(document).ready(function () {
+            if (!navigator.userAgent.match(/Android|Mobile|iP(hone|od|ad)|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/)) {
+            } else {
+            }
+        });
+
+    </script>
+
+    <!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header_wrap">
+            <div class="header">
+                <div class="wsize">
+                    <div class="msize">
+                        <div class="top_util_link">
+                            <p class="t1"><a href="#">로그인</a></p>
+                            <p class="t2"><a href="#">회원가입</a></p>
+                            <p class="t3"><a href="#">고객센터</a></p>
+                        </div>
+                        <div class="gnb_wrap">
+                            <h1 class="logo"><a href="#"><img src="../img/logo.png" alt="노원 수학 문화관"></a></h1>
+                            <!-- 
+								메뉴 클릭했을때.. <div class="gnb active">
+							-->
+                            <div class="gnb">
+                                <ul class="dep1">
+                                    <li class="d1 d1a"><a href="javascript://">관람안내</a>
+                                        <div class="dep2 dep2_1">
+                                            <ul>
+                                                <li class="d2"><a href="#">이용안내</a></li>
+                                                <li class="d2"><a href="#">층별안내</a></li>
+                                                <li class="d2"><a href="#">시설안내</a></li>
+                                                <li class="d2"><a href="#">대관안내</a></li>
+                                                <li class="d2"><a href="#">주차안내</a></li>
+                                                <li class="d2"><a href="#">관람예약</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="d1 d1a"><a href="javascript://">전시안내</a>
+                                        <div class="dep2 dep2_2">
+                                            <ul>
+                                                <li class="d2"><a href="#">전시종합안내</a></li>
+                                                <li class="d2"><a href="#">기획전시공간(1층)</a></li>
+                                                <li class="d2"><a href="#">수학놀이터(1층)</a></li>
+                                                <li class="d2"><a href="#">수학과 세상(2층)</a></li>
+                                                <li class="d2"><a href="#">수학과 예술(3층)</a></li>
+                                                <li class="d2"><a href="#">야외</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="d1 d1a"><a href="javascript://">교육 및 행사</a>
+                                        <div class="dep2 dep2_3">
+                                            <ul>
+                                                <li class="d2"><a href="#">수학교육프로그램</a></li>
+                                                <li class="d2"><a href="#">수학문화행사</a></li>
+                                                <li class="d2"><a href="#">수학봉사 서포터즈</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="d1 d1a"><a href="javascript://">매스휴먼북</a>
+                                        <div class="dep2 dep2_4">
+                                            <ul>
+                                                <li class="d2"><a href="#">참가 신청</a></li>
+                                                <li class="d2"><a href="#">개설 신청</a></li>
+                                                <li class="d2"><a href="#">강사 등록</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="d1 d1a"><a href="javascript://">소통마당</a>
+                                        <div class="dep2 dep2_5">
+                                            <ul>
+                                                <li class="d2"><a href="#">공지사항</a></li>
+                                                <li class="d2"><a href="#">뉴스 및 소식</a></li>
+                                                <li class="d2"><a href="#">Q & A</a></li>
+                                                <li class="d2"><a href="#">자료실</a></li>
+                                                <li class="d2"><a href="#">소식지</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="d1 d1a"><a href="javascript://">열린시설</a>
+                                        <div class="dep2 dep2_6">
+                                            <ul>
+                                                <li class="d2"><a href="#">드라이시네마(영화관)</a></li>
+                                                <li class="d2"><a href="#">시그마자료실(도서관)</a></li>
+                                                <li class="d2"><a href="#">트라이교구판매샵</a></li>
+                                                <li class="d2"><a href="#">카페테리아</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="d1 d1a"><a href="javascript://">수학문화관 소개</a>
+                                        <div class="dep2 dep2_7">
+                                            <ul>
+                                                <li class="d2"><a href="#">인사말</a></li>
+                                                <li class="d2"><a href="#">일반현황</a></li>
+                                                <li class="d2"><a href="#">조직도</a></li>
+                                                <li class="d2"><a href="#">찾아오시는 길</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="d1 d1a"><a href="javascript://">서비스정책</a>
+                                        <div class="dep2 dep2_8">
+                                            <ul>
+                                                <li class="d2"><a href="#">이용약관</a></li>
+                                                <li class="d2"><a href="#">개인정보처리방침</a></li>
+                                                <li class="d2"><a href="#">법적고지</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p class="ico_menu jQMenu"><a href="javascript://"><img src="../img/ico_menu.png"
+                                        alt="메뉴"></a></p>
+                        </div>
+                        <!--gnb_wrap-->
+                    </div>
+                </div>
+                <div class="gnb_bg">&nbsp;</div>
+            </div>
+        </div> <!-- header -->
+        <div id="contentWrap">
+            <div class="wsize">
+                <div class="msize">
+                    <div class="sub_content">
+                        <h3 class="tit">참 여 신 청</h3>
+                        <table class="sign_write mb17">
+                            <caption></caption>
+                            <colgroup>
+                                <col style="width:20%">
+                                <col style="width:40%">
+                                <col style="width:40%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>마을학교명</th>
+                                    <td colspan="2"> <input type="text" value="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th><span class="block center mb10"><img src="../img/ico_cam.png"
+                                                alt="사진을 추가해 주십시오"></span>사진을 추가해 주십시오</th>
+                                    <td colspan="2">
+                                        <div class="pad10">
+                                            <div class="file_box">
+                                                <div class="file_input_div">
+                                                    <button type="button" class="tbtn_purple">파일선택</button>
+                                                    <hr class="mblock" />
+                                                    <input type="file" class="file_input_hidden" title="첨부파일" />
+                                                    
+                                                    <input type="text" value="선택된 파일 없음" class="tinput wid250"
+                                                        readonly="" />
+                                                        <hr class="mblock" />
+                                                </div>
+                                            </div>
+                                            <button type="button" class="tbtn_blue ml10">추가</button>
+                                            <div class="mt10">
+                                                <p>* 표지사진은 동아리 첫페이지에 보여지는 중요한 사진입니다.</p>
+                                                <p>* 개설하시는 동아리를 잘 나타낼 수 있는 사진을 준비하여 업로드하시고 신청서 작성을 시작해 주십시오.</p>
+                                                <p>* 지원하는 형식은 JPG, PNG, GIF 입니다.</p>
+                                                <p>* 권장하는 사이즈는 540 * 430 pixel 입니다.</p>
+                                                <p>* 제한용량은 500KB 입니다.</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr id="study_write_open_previewTr" style="display:none;">
+                                    <th><span class="block center mb10"><img src="../img/ico_pic.png"
+                                                alt="사진첨부 확인"></span>사진첨부 확인</th>
+                                    <td>
+                                        <div id="study_write_open_previewBox"> </div>
+                                        <div id="IE10ImgBox" style="display:none;"></div>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>마을학교소개</th>
+                                    <td colspan="2"> <textarea class="wid800 hei90"></textarea> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="sign_write mb17">
+                            <caption></caption>
+                            <colgroup>
+                                <col style="width:20%">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>신청자</th>
+                                    <td> <input type="text" id="study_write_open_requester" value="이수용"
+                                            class="tinput wid250 " maxlength="50" readonly=""> </td>
+                                </tr>
+                                <tr>
+                                    <th>선생님</th>
+                                    <td> <input type="text" value="이수용" maxlength="50"> </td>
+                                </tr>
+                                <tr>
+                                    <th>연락처</th>
+                                    <td> <input type="text" value="" class="tinput wid250 " /> </td>
+                                </tr>
+                                <tr>
+                                    <th>계좌번호</th>
+                                    <td>
+                                        <span>예금주</span><hr class="mblock" />
+                                        <input type="text" value="" class="tinput wid250">
+                                        <hr class="mblock" />
+                                        <span>은행</span>
+                                        <hr class="mblock" />
+                                        <select class="tselect wid100">
+                                            <option value="" selected="">은행</option>
+                                        </select>
+                                        <hr class="mblock" />
+                                        <span>계좌번호</span><hr class="mblock" />
+                                        <input type="text" value="" class="tinput wid250">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="2">장소</th>
+                                    <td>
+                                        <input type="text" value="" class="tinput wid70"> <span>&nbsp;</span>
+                                        <button type="button" class="post_btn">우편번호</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" value="" class="tinput wid340">
+                                        <hr class="mblock" />
+                                        <input type="text" value="" class="tinput wid180">
+                                        <label for="r1" class="ml20">
+                                            <input type="checkbox" value="N"> 비공개
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>대상</th>
+                                    <td>
+                                        <span>미취학</span>
+                                        <select class="tselect wid65">
+                                            <option value="0">0</option>
+                                        </select>
+                                        <span class="ml10">초등</span>
+                                        <select class="tselect wid65">
+                                            <option value="0">0</option>
+                                        </select><hr class="mblock" />
+                                        <span class="ml10">중등</span>
+                                        <select class="tselect wid65">
+                                            <option value="0">0</option>
+                                        </select>
+                                        <span class="ml10">고등</span>
+                                        <select class="tselect wid65">
+                                            <option value="0">0</option>
+                                        </select><hr class="mblock" />
+                                        <span class="ml10">성인</span>
+                                        <select class="tselect wid65">
+                                            <option value="0">0</option>
+                                        </select>
+                                        <span>명</span><hr class="mblock" />
+                                        <span class="ml10">비고</span>
+                                        <input type="text" value="" class="tinput wid150">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>회수</th>
+                                    <td>
+                                        <select class="tselect wid65">
+                                            <option value="1" selected="">1</option>
+                                        </select>
+                                        <span>회</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>회차당 시간</th>
+                                    <td>
+                                        <select class="tselect wid65">
+                                            <option value="30">30</option>
+                                        </select>
+                                        <span>분</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>기간</th>
+                                    <td>
+                                        <input type="text" class="tinput wid100 ">
+                                        <span>~</span>
+                                        <input type="text" class="tinput wid100">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="2">일정</th>
+                                    <td>
+                                        <span>요일</span>
+                                        <select class="tselect wid65 mr10">
+                                            <option value="01">월</option>
+                                            <option value="02">화</option>
+                                            <option value="03">수</option>
+                                            <option value="04">목</option>
+                                            <option value="05">금</option>
+                                            <option value="06">토</option>
+                                            <option value="07">일</option>
+                                        </select>
+                                        <hr class="mblock" />
+                                        <span class="">시간</span><hr class="mblock" />
+                                        <select class="tselect wid100">
+                                            <option value="0900">09:00</option>
+                                            <option value="0930">09:30</option>
+                                            <option value="1000">10:00</option>
+                                            <option value="1030">10:30</option>
+                                            <option value="1100">11:00</option>
+                                            <option value="1130">11:30</option>
+                                            <option value="1200">12:00</option>
+                                            <option value="1230">12:30</option>
+                                            <option value="1300">13:00</option>
+                                            <option value="1330">13:30</option>
+                                            <option value="1400">14:00</option>
+                                            <option value="1430">14:30</option>
+                                            <option value="1500">15:00</option>
+                                            <option value="1530">15:30</option>
+                                            <option value="1600">16:00</option>
+                                            <option value="1630">16:30</option>
+                                            <option value="1700">17:00</option>
+                                            <option value="1730">17:30</option>
+                                            <option value="1800">18:00</option>
+                                            <option value="1830">18:30</option>
+                                            <option value="1900">19:00</option>
+                                            <option value="1930">19:30</option>
+                                            <option value="2000">20:00</option>
+                                            <option value="2030">20:30</option>
+                                            <option value="2100">21:00</option>
+                                        </select>
+                                        <span>~</span>
+                                        <select class="tselect wid100">
+                                            <option value="0930">09:30</option>
+                                            <option value="1000">10:00</option>
+                                            <option value="1030">10:30</option>
+                                            <option value="1100">11:00</option>
+                                            <option value="1130">11:30</option>
+                                            <option value="1200">12:00</option>
+                                            <option value="1230">12:30</option>
+                                            <option value="1300">13:00</option>
+                                            <option value="1330">13:30</option>
+                                            <option value="1400">14:00</option>
+                                            <option value="1430">14:30</option>
+                                            <option value="1500">15:00</option>
+                                            <option value="1530">15:30</option>
+                                            <option value="1600">16:00</option>
+                                            <option value="1630">16:30</option>
+                                            <option value="1700">17:00</option>
+                                            <option value="1730">17:30</option>
+                                            <option value="1800">18:00</option>
+                                            <option value="1830">18:30</option>
+                                            <option value="1900">19:00</option>
+                                            <option value="1930">19:30</option>
+                                            <option value="2000">20:00</option>
+                                            <option value="2030">20:30</option>
+                                            <option value="2100">21:00</option>
+                                            <option value="2130">21:30</option>
+                                            <option value="2200">22:00</option>
+                                        </select>
+                                        <hr class="mblock" />
+                                        <button type="button" class="tbtn_blue ml10">추가</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="at">
+                                        <div class="file_view_box"> </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p class="center mb22"><button type="button" class="btn_etc"><span>학습계획 입력</span></button></p>
+
+                        <table class="sign_write mb17">
+                            <caption></caption>
+                            <colgroup>
+                                <col style="width:5%;">
+                                <col style="width:11%;">
+                                <col style="width:25%;">
+                                <col>
+                                <col style="width:12%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>회차</th>
+                                    <th>날짜</th>
+                                    <th>주제</th>
+                                    <th>내용</th>
+                                    <th>준비/유의사항</th>
+                                </tr>
+                            </thead>
+                            <tbody id="study_write_open_studyPlan"> </tbody>
+                        </table>
+
+                        <table class="sign_write sign_view mb17">
+                            <caption></caption>
+                            <colgroup>
+                                <col style="width:20%">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>추가비용 / 유의사항</th>
+                                    <td> <textarea class="wid600 hei90"></textarea> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table class="sign_write">
+                            <caption></caption>
+                            <colgroup>
+                                <col style="width:20%">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>첨부문서</th>
+                                    <td>
+                                        <div class="file_box">
+                                            <div class="file_input_div">
+                                                <button type="button" class="tbtn_green">찾아보기</button><hr class="mblock" />
+                                                <input type="file" class="file_input_hidden">
+                                                <input type="text" value="선택된 파일 없음" class="tinput wid250" readonly="">
+                                                <hr class="mblock" />
+                                            </div>
+                                        </div>
+                                        <button type="button" class="tbtn_blue ml10">추가</button>
+                                        <div class="file_view_box" id="study_write_open_fileBox"> </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="sign_view_size">
+                            <p class="right relative mt10">
+                                <button type="button" class="btn_darkgray">임시저장</button>
+                                <button type="button" class="btn_org">확인</button>
+                                <button type="button" class="btn_white">초기화</button>
+                            </p>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- 로고 -->
+            <div class="family_wrap">
+                <div class="wsize">
+                    <div class="msize">
+                        <ul class="family">
+                            <li><img src="../img/foot_ico_1.jpg" alt=""></li>
+                            <li><img src="../img/foot_ico_2.jpg" alt=""></li>
+                            <li><img src="../img/foot_ico_3.jpg" alt=""></li>
+                            <li><img src="../img/foot_ico_4.jpg" alt=""></li>
+                            <li><img src="../img/foot_ico_5.jpg" alt=""></li>
+                            <li><img src="../img/foot_ico_6.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer_wrap">
+            <div class="wsize">
+                <div class="msize">
+                    <h2 class="foot_logo"><a href="#"><img src="../img/foot_logo.png" alt=""></a></h2>
+                    <div class="foots">
+                        <p class="mb10">
+                            <a href="#">이용약관</a>
+                            <span>|</span>
+                            <a href="javascript://" class="jQPop_private1">개인정보처리방침</a>
+                            <span>|</span>
+                            <a href="javascript://" class="jQPop_private2">이메일무단수신거부</a>
+                        </p>
+                        <p class="address mb10">서울시 노원구 중계동 453-10 TEL 02 - 2116 - 2181 FAX 02-2116-4869</p>
+                        <p class="copy">Copyright © 2018. NOWON Mathmatics Culture Center All Rights Reserved.</p>
+                    </div>
+                    <p class="sns">
+                        <a href="#"><img src="../img/foot_blog.png" alt=""></a>
+                        <a href="#"><img src="../img/foot_facebook.png" alt=""></a>
+                    </p>
+                    <p id="back-top" class="btnTop"><a href="javascript://"><img src="../img/common/ico_top.gif"
+                                alt="top"></a></p>
+                </div>
+            </div>
+        </div>
+    </div> <!-- widsize -->
+
+
+
+    <!-- mobile menu -->
+    <div class="all_menu_wrap">
+        <div class="all_menu">
+            <ul class="dep1">
+                <li class="d1 d1a"><a href="javascript://">관람안내</a>
+                    <div class="dep2_wrap">
+                        <ul class="dep2">
+                            <li class="d2"><a href="#">이용안내</a></li>
+                            <li class="d2"><a href="#">층별안내</a></li>
+                            <li class="d2"><a href="#">시설안내</a></li>
+                            <li class="d2"><a href="#">대관안내</a></li>
+                            <li class="d2"><a href="#">주차안내</a></li>
+                            <li class="d2"><a href="#">관람예약</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="d1 d1a"><a href="javascript://">전시안내</a>
+                    <div class="dep2_wrap">
+                        <ul class="dep2">
+                            <li class="d2"><a href="#">전시종합안내</a></li>
+                            <li class="d2"><a href="#">기획전시공간(1층)</a></li>
+                            <li class="d2"><a href="#">수학놀이터(1층)</a></li>
+                            <li class="d2"><a href="#">수학과 세상(2층)</a></li>
+                            <li class="d2"><a href="#">수학과 예술(3층)</a></li>
+                            <li class="d2"><a href="#">야외</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="d1 d1a"><a href="javascript://">교육 및 행사</a>
+                    <div class="dep2_wrap">
+                        <ul class="dep2">
+                            <li class="d2"><a href="#">수학교육프로그램</a></li>
+                            <li class="d2"><a href="#">수학문화행사</a></li>
+                            <li class="d2"><a href="#">수학봉사 서포터즈</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="d1 d1a"><a href="javascript://">매스휴먼북</a>
+                    <div class="dep2_wrap">
+                        <ul class="dep2">
+                            <li class="d2"><a href="#">참가 신청</a></li>
+                            <li class="d2"><a href="#">개설 신청</a></li>
+                            <li class="d2"><a href="#">강사 등록</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="d1 d1a"><a href="javascript://">소통마당</a>
+                    <div class="dep2_wrap">
+                        <ul class="dep2">
+                            <li class="d2"><a href="#">공지사항</a></li>
+                            <li class="d2"><a href="#">뉴스 및 소식</a></li>
+                            <li class="d2"><a href="#">Q & A</a></li>
+                            <li class="d2"><a href="#">자료실</a></li>
+                            <li class="d2"><a href="#">소식지</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="d1 d1a"><a href="javascript://">열린시설</a>
+                    <div class="dep2_wrap">
+                        <ul class="dep2">
+                            <li class="d2"><a href="#">드라이시네마(영화관)</a></li>
+                            <li class="d2"><a href="#">시그마자료실(도서관)</a></li>
+                            <li class="d2"><a href="#">트라이교구판매샵</a></li>
+                            <li class="d2"><a href="#">카페테리아</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="d1 d1a"><a href="javascript://">수학문화관 소개</a>
+                    <div class="dep2_wrap">
+                        <ul class="dep2">
+                            <li class="d2"><a href="#">인사말</a></li>
+                            <li class="d2"><a href="#">일반현황</a></li>
+                            <li class="d2"><a href="#">조직도</a></li>
+                            <li class="d2"><a href="#">찾아오시는 길</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="d1 d1a"><a href="javascript://">서비스정책</a>
+                    <div class="dep2_wrap">
+                        <ul class="dep2">
+                            <li class="d2"><a href="#">이용약관</a></li>
+                            <li class="d2"><a href="#">개인정보처리방침</a></li>
+                            <li class="d2"><a href="#">법적고지</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <!-- mobile menu end -->
+
+
+    <div class="ly_pop_bg">&nbsp;</div>
+    <div class="black_bg">&nbsp;</div>
+    <a href="javascript://" class="jQMenu_close"><img src="../img/common/menu_close_web.png" alt="메뉴 닫기"></a>
+</body>
+
+</html>
