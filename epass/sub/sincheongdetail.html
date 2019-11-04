@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=720px, user-scalable=no" />
+    <!-- 모바일 이미지 -->
+    <meta name="title" content="" />
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/swiper.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+
+    <link rel="stylesheet" href="../css/swiper.css" type="text/css" />
+    <link rel="stylesheet" href="../css/common.css" type="text/css" />
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function() {
+        jQuery(".pop_menu").sy_modalApi(); // 전체메뉴
+        jQuery(".pop_my_menu").sy_modalApi(); // 마이메뉴 
+		jQuery(".pop_default").sy_modalApi(); // 센터 팝업 
+        jQuery(".jQtoggle .jQBtn").slideToggleJs();
+        jQuery(".tabs_menu").tabActive();
+
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- maintop -->
+      <div id="topArea">
+        <a
+          href="javascript://"
+          onclick='ly_on(jQuery(".pop_menu"))'
+          class="ico_menu"
+          ><img src="../img/ico_menu.png" alt="menu"
+        /></a>
+        <a href="#" class="logo"><img src="../img/logo.png" alt="menu"/></a>
+        <a
+          href="javascript://"
+          onclick='ly_on(jQuery(".pop_my_menu"))'
+          class="ico_my"
+          ><img src="../img/ico_my.png" alt="menu"
+        /></a>
+      </div>
+      <!-- sub top -->
+      <div id="">
+    		<div class="sub_top_wrap mb30">
+				<p><img src="../img/bg_01.jpg" alt="" /></p> <!-- 이미지 백그라운드에서 밖으로 뺌 -->
+    			<p class="top_tit">전산세무/회계</p>
+    			<p class="sub_top_tit">epass 재경관리사<br/>(세무회계)</p>
+    		</div>
+      </div>
+	  <!-- 컨텐츠 -->
+      <div>
+			<div class="tabs_padding">
+				<div class="tabs_menu_wrap">
+					<ul class="tabs_menu">
+						<li class="active"><a href="javascript://">과정개요</a></li>
+						<li><a href="javascript://">강사소개</a></li>
+						<li><a href="javascript://">수료기준</a></li>
+						<li><a href="javascript://">학습목차</a></li>
+					</ul>
+				</div>
+			</div>
+    		<div id="detail1" class="detailBox">
+    			<div>
+    				<p class="tabs_center_tit"><span>과정개요</span></p>
+					<div class="tab_box_1">
+						<dl class="lists">
+							<dt>·학습기간</dt>
+							<dd>2019-07-15~2019-08-14</dd>
+							<dt>·신청기간</dt>
+							<dd>2019-07-02~2019-07-11</dd>
+							<dt>·교육비</dt>
+							<dd>99,000원</dd>
+							<dt>·국비지원액</dt>
+							<dd class="col_red">99,000원</dd>
+							<dt>·자부담</dt>
+							<dd>
+								 <p class="price pt0 pb0">
+									<span class="p_p col_white">1,25,5000원<span>&nbsp;</span></span>
+									<span class="p col_white"><span>0</span>원</span>
+								  </p>
+							</dd>
+						</dl>
+					</div>
+    			</div>
+    		</div>
+    		<div id="detail2" class="detailBox">
+    			<div class="tab_box_2_wrap">
+					<p class="tabs_center_tit"><span>강사소개</span></p>
+					<div class="tab_box_2 ">
+						<p class="shadow_box"><img src="../img/img_profile.jpg" alt="" /></p>
+						<p class="t mt30">박정근</p>
+						<p class="st">공인회계사 / 세무사<br/>
+						前 세무사시험 출제위원<br/>
+						前 재경관리사 세무회계 교재 집필<br/>
+						前 삼일회계법인<br/>
+						前 삼일아카데미 세무회계 부분 강사<br/>
+						前 삼성전자, 현대자동차, 기아자동차, 신세계, 두산 등 <br/>
+						기업 강의<br/>
+						現 Google 캠퍼스 서울 세무멘토</p>
+					</div>
+    			</div>
+    		</div>
+
+    		<div id="detail3" class="detailBox">
+    			<div>
+					<p class="tabs_center_tit"><span>수료기준</span></p>
+					<table class="tab_box_3">
+						<colgroup>
+							<col style="width:24%"/>
+							<col style="width:38%"/>
+							<col style="width:38%"/>
+						</colgroup>
+						<thead>
+							<tr>
+								<th>&nbsp;</th>
+								<th>평가비중</th>
+								<th>수료기준</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="th">진도율</td>
+								<td>0.00%</td>
+								<td rowspan="5">진도 : 80.00점<br/>
+								이상<br/><br/>
+								총점 : 60.00점<br/>
+								이상</td>
+							</tr>
+							<tr>
+								<td class="th">중간평가</td>
+								<td>10.00%</td>
+							</tr>
+							<tr>
+								<td class="th">최종평가</td>
+								<td>90.00%</td>
+							</tr>
+							<tr>
+								<td class="th">설문</td>
+								<td>0.00%</td>
+							</tr>
+							<tr>
+								<td class="th">총계</td>
+								<td>100%</td>
+							</tr>
+						</tbody>
+					</table>
+    			</div>
+    		</div>
+    		<div id="detail4" class="detailBox">
+    			<div class="tab_box_2_wrap">
+					<p class="tabs_center_tit"><span>학습목차</span></p>
+					<ul class="tab_box_4 inner_box">
+						<li class="top">
+							<p class="t1">교시</p>
+							<p class="t2">학습내용</p>
+						</li>
+						<li>
+							<p class="t1">001</p>
+							<p class="t2"><span class="col_green">1단원 : epass 재경관리사 - 세무회계</span><br/>
+						총설 및 각사업연도법인세[1] 제목은 최대 두줄 나머지는......</p>
+						</li>
+						<li>
+							<p class="t1">002</p>
+							<p class="t2">각사업연도법인세[2]</p>
+						</li>
+					</ul>
+    			</div>
+    		</div>
+			<!-- 수강신청 고정 -->
+			<p class="fixed_area center">
+				<a href="javascript://" class="btn2 wid100 mg0"  onclick='ly_on(jQuery(".pop_default"))'>수강신청</a>
+			</p>
+  	  </div>
+      <!-- mainfooter -->
+      <div id="footerWrap">
+        <div class="inner_box">
+          <p class="center pt45 pb30">
+            <button class="f_btn">이용약관</button>
+            <button class="f_btn">개인정보보호정책</button>
+			<button class="f_btn">학습 APP 다운로드</button>
+          </p>
+          <p class="center f_txt mt10">
+            ㈜이패스코리아<br />
+            대표이사: 이재남 <span>|</span> 개인정보관리책임자 : 나현철<br />
+            사업자 등록번호:105-86-56986 <br />
+            통신판매업 신고번호 : 2005-02554
+          </p>
+          <p class="center f_txt col_light_gray mt30">
+            Copyright EPASSKOREA ALL RIGHTS RESERVD
+          </p>
+        </div>
+      </div>
+
+      <!-- top button -->
+      <div id="back-top">
+        <a href="javascript://"><img src="../img/btn_top.png" alt="위로"/></a>
+      </div>
+
+      <!-- 메뉴 팝업 -->
+      <!-- 전체메뉴 팝업 -->
+      <div class="pop_wrap pop_full pop_menu">
+        <div class="fullPoptopArea">
+          <p class="clo left_clo"><img src="../img/ico_close.png" alt="" /></p>
+          <a href="#" class="logo"><img src="../img/logo.png" alt="menu"/></a>
+        </div>
+        <div class="members_wrap">
+          <p class="center">
+            <a href="#" class="btn1">회원가입</a>
+            <a href="#" class="btn2">로그인</a>
+          </p>
+        </div>
+        <div class="all_menu jQtoggle">
+          <a href="#" class="jQBtn"
+            >수강신청
+            <span class="arr">&nbsp;</span>
+          </a>
+          <div class="sub_menu">
+            <ul>
+              <li><a href="#">재경관리사</a></li>
+              <li><a href="#">재경관리사</a></li>
+              <li><a href="#">재경관리사</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="all_menu jQtoggle">
+          <a href="#" class="jQBtn"
+            >내 강의실
+            <span class="arr">&nbsp;</span>
+          </a>
+          <div class="sub_menu">
+            <ul>
+              <li><a href="#">재경관리사</a></li>
+              <li><a href="#">재경관리사</a></li>
+              <li><a href="#">재경관리사</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="all_menu jQtoggle">
+          <a href="#" class="jQBtn"
+            >근카제안내
+            <span class="arr">&nbsp;</span>
+          </a>
+          <div class="sub_menu">
+            <ul>
+              <li><a href="#">재경관리사</a></li>
+              <li><a href="#">재경관리사</a></li>
+              <li><a href="#">재경관리사</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 마이메뉴 팝업 -->
+      <div class="pop_wrap pop_full pop_my_menu">
+        <div class="fullPoptopArea">
+          <a href="#" class="logo"><img src="../img/logo.png" alt="menu"/></a>
+          <p class="clo right_clo"><img src="../img/ico_close.png" alt="" /></p>
+        </div>
+        <div class="members_wrap">
+		  <!-- 비회원 -->
+          <p class="center wid100" style="display:none">
+            <a href="#" class="btn1">회원가입</a>
+            <a href="#" class="btn2">로그인</a>
+          </p>
+		  <!-- 회원 -->
+		  <div class="login_user">
+			<p class="name">이패스코... <span>님</span></p>
+			<p class="right">
+				<button class="btn_border bor_green">내정보관리</button>
+				<button class="btn_fill bg_green">로그아웃</button>
+			</p>
+		  </div>
+        </div>
+        <p class="pop_tit_my">마이메뉴</p>
+        <div class="all_menu ">
+          <a href="#" class="jQBtn">고객센터
+            <span class="arr_move">&nbsp;</span>
+          </a>
+        </div>
+        <div class="all_menu ">
+          <a href="#" class="jQBtn"
+            >주문내역
+            <span class="arr_move">&nbsp;</span>
+          </a>
+        </div>
+      </div>
+
+	  <!-- 기본 팝업 -->
+      <div class="pop_wrap pop_default">
+        <p class="pop_txt center">수강신청 페이지로 이동하시겠습니까?</p>
+		<p class="center mb50">
+			<button class="btn3 wid35">확인</button>
+			<button class="btn3 bg_dark_gray wid35 clo">닫기</button>
+		</p>
+      </div>
+      <!-- pop bg -->
+      <div class="ly_pop_bg">&nbsp;</div>
+    </div>
+  </body>
+</html>

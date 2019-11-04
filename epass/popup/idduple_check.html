@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=720px, user-scalable=no" />
+	<!-- 모바일 이미지 -->
+	<meta name="title" content="" />
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../js/swiper.js"></script>
+	<script type="text/javascript" src="../js/common.js"></script>
+
+	<link rel="stylesheet" href="../css/swiper.css" type="text/css" />
+	<link rel="stylesheet" href="../css/common.css" type="text/css" />
+
+	<!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	<!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	<script type="text/javascript">
+		jQuery(document).ready(function () {
+			jQuery(".pop_menu").sy_modalApi(); // 전체메뉴 중앙 팝업
+			jQuery(".pop_my_menu").sy_modalApi(); // 전체메뉴 중앙 팝업
+			jQuery(".jQtoggle .jQBtn").slideToggleJs();// 전체메뉴 토글
+			jQuery(".jQtoggle .jQBoard").slideToggleJs();// 게시글 검색
+		});
+	</script>
+</head>
+
+<body>
+	<div id="wrap">
+		<!-- maintop -->
+		<div id="topArea">
+			<a href="javascript://" onclick='ly_on(jQuery(".pop_menu"))' class="ico_menu"><img src="../img/ico_menu.png"
+					alt="menu" /></a>
+			<a href="#" class="logo"><img src="../img/logo.png" alt="menu" /></a>
+			<a href="javascript://" onclick='ly_on(jQuery(".pop_my_menu"))' class="ico_my"><img src="../img/ico_my.png"
+					alt="menu" /></a>
+		</div>
+		<!-- content -->
+		<div class="inner_box">
+			<button class="btn_arr mb50">아이디중복확인 팝업</button>
+		</div>
+
+		<!-- mainfooter -->
+		<div id="footerWrap">
+			<div class="inner_box">
+				<p class="center pt45 pb30">
+					<button class="f_btn">이용약관</button>
+					<button class="f_btn">개인정보보호정책</button>
+					<button class="f_btn">학습 APP 다운로드</button>
+				</p>
+				<p class="center f_txt mt10">
+					㈜이패스코리아<br />
+					대표이사: 이재남 <span>|</span> 개인정보관리책임자 : 나현철<br />
+					사업자 등록번호:105-86-56986 <br />
+					통신판매업 신고번호 : 2005-02554
+				</p>
+				<p class="center f_txt col_light_gray mt30">
+					Copyright EPASSKOREA ALL RIGHTS RESERVD
+				</p>
+			</div>
+		</div>
+		
+
+		<div id="wrap_pop">
+			<!-- 탑영역 -->
+			<div id="top_s">
+				<p class="pop425"><img src="/common/img/icon_stuproarrow.png" alt="화살표">아이디 중복확인</p>
+			</div>
+			<!-- 탑영역 끝 -->
+		
+			<!-- 컨텐츠 영역 시작-->
+			<div id="contents_s">
+		
+				<div class="infofinish">
+					<p>- <span class="emphasis">ID를 입력하세요.</span></p>
+				</div>
+		
+				<!-- 아이디중복체크박스 -->
+				<div class="idcheckset">
+					<form id="frmIDCheck" name="frmIDCheck" method="POST">
+						<input type="hidden" name="IDUSEOK" id="IDUSEOK" value="Y">
+						<fieldset>
+							<legend class="hidden">로그인</legend>
+							<ul class="checksection">
+								<li>
+									<p class="idtextcol"><label for="MB_ID" class="labeltitle">아이디</label></p>
+									<p class="identrycol">
+										<input type="text" name="MB_ID" id="MB_ID" onclick="javascript:change_id();"
+											value="${req.MB_ID}">
+										<label for="MB_ID" class="hiddenTitle">아이디중복확인</label>
+										<input type="button" value="아이디중복확인" class="btn_idcheck" name="btnIDDuplicatCheck"
+											id="btnIDDuplicatCheck">
+									</p>
+								</li>
+								<li>
+									<p class="textcol">
+										<label class="labeltitle">아이디중복확인 결과 :</label>
+									</p>
+									<p class="entrycol"><span class="emphasis">사용가능한 아이디 입니다.</span></p>
+									<p class="entrycol"><span class="emphasis">사용중인 아이디 입니다. <br>다른 아이디를 사용하시기 바랍니다.</span></p>
+								</li>
+							</ul>
+							<div class="btnsection2">
+								<button type="button" id="btnIDUse" name="btnIDUse">적용</button>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			<!-- 컨텐츠영역끝 -->
+		</div>
+
+	</div>
+</body>
+
+</html>
+
+
+
+
+
+
+

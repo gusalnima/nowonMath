@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=720px, user-scalable=no">
+    <!-- 모바일 이미지 -->
+    <meta name="title" content="">
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/swiper.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+
+    <link rel='stylesheet' href='../css/swiper.css' type='text/css' />
+    <link rel='stylesheet' href='../css/common.css' type='text/css' />
+
+
+    <!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            jQuery('.pop_menu').sy_modalApi(); // 전체메뉴 중앙 팝업
+            jQuery('.pop_my_menu').sy_modalApi(); // 전체메뉴 중앙 팝업
+            jQuery('.jQtoggle .jQBtn').slideToggleJs();
+        });
+    </script>
+</head>
+
+<body>
+    <div id="topArea">
+        <a href="javascript://" onclick='ly_on(jQuery(".pop_menu"))' class="ico_menu"><img src="../img/ico_menu.png"
+                alt="menu" /></a>
+        <a href="#" class="logo"><img src="../img/logo.png" alt="menu" /></a>
+        <a href="javascript://" onclick='ly_on(jQuery(".pop_my_menu"))' class="ico_my"><img src="../img/ico_my.png"
+                alt="menu" /></a>
+    </div>
+</body>
+
+</html>
