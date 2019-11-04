@@ -149,6 +149,51 @@
 .m_tit_sub { font-size:15px; }
 
 
+
+.login_wrap { padding:80px 0; margin:0 auto; width:100%; }
+.login_input {
+  background: #fff;
+  box-shadow: 2px 2px 2px #ececec inset;
+  width:100% !important;
+  height: 51px;
+    line-height: 51px;
+    border: 1px solid #c6c6c6;
+    font-size: 16px;
+    color: #5c5c5c;
+}
+.login_wrap .link span { display:inline-block; padding:0 10px;}
+.login_wrap .logo { width:70%; margin:0 auto; }
+.btn_login { width:100% !important; }
+
+.sign_wrap { padding:30px 0; margin:0 auto; width:100%; }
+.sign_wrap .wid700, .sign_wrap .wid400 { width:100% !important;}
+
+.join_tab { overflow:hidden; position:relative; background:#ff9320;}
+.join_tab li { position:relative; }
+.join_tab li { float:left; width:33.3333%; border-left:1px solid #fff; padding:10px 10px; text-align:center; box-sizing: border-box; display:block; background:#eee; color:#999; font-size:18px; }
+.join_tab li:first-child{ border-left:none;}
+.join_tab li.l1 { z-index:4; }
+.join_tab li.l2 { z-index:3; left:0; }
+.join_tab li.l3 { position:absolute; right:0; top:0; z-index:1; }
+.join_tab li.active { background: #ff9320; color:#fff; }
+
+
+.sign_member {width: 100%; display:block;}
+.sign_member2 { width:100%; margin:0 auto; }
+.sign_member th { font-size:18px; padding: 10px 6px 5px; text-align:left; vertical-align:top; display:block;}
+.sign_member td {padding: 5px 6px;text-align: left; display:block;}
+.sign_member td span {padding: 0 3px; }
+
+
+.member_tab { overflow:hidden; border-bottom:2px solid #8d8d8d; width:100%; margin:0 auto; }
+.member_tab li { float:left; width:50%; }
+.member_tab li a { display:block; text-align:center; padding:14px 0; font-size:16px; font-weight:bold; color:#8d8d8d; background:#fff; border:1px solid #8d8d8d; border-bottom:none; }
+.member_tab li a:hover , .member_tab li a.active { background: #8d8d8d; color:#fff; }
+
+.half_img { width:100%; margin:0 auto;}
+.half_img_left { width:100%; }
+
+
 .foot_util { width:100%; background: #2b2b2b; display:block; }
 .btm_util_icon { overflow:hidden; }
 .btm_util_icon li { float:left; }

@@ -39,6 +39,7 @@
             if (!navigator.userAgent.match(/Android|Mobile|iP(hone|od|ad)|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/)) {
             } else {
             }
+            jQuery('.member_tab').tabDefultApi();
 
 
         });
@@ -165,80 +166,156 @@
             <div class="wsize">
                 <div class="msize">
                     <div class="sub_content">
-                        <h3 class="tit">찾아오시는 길</h3>
-                        <p class="bl_tit"><span class="bl red_bg">&nbsp;</span>연락처 및 주소</p>
-                        <ul class="ml20 mb45">
-                            <li class="bl_square mb15"><span class="bl gray_bg">&nbsp;</span>TEL 02-2116-2181 / Fax
-                                02-2116-4869</li>
-                            <li class="bl_square mb15"><span class="bl gray_bg">&nbsp;</span>주소 서울 노원구 중계동 453-10</li>
-                        </ul>
-                        <p class="half_img mb20"><img src="../img/img_07_4.jpg" alt=""></p>
-                        <p class="bl_tit"><span class="bl red_bg">&nbsp;</span>교통 안내</p>
-                        <ul class="ml20 mb45">
-                            <li class="bl_square mb15"><span class="bl gray_bg">&nbsp;</span>지하철 이용시
-                                <ul class="mt10">
-                                    <li class="bl_sm_circle"><span class="bl gray_bg">&nbsp;</span>4호선 상계역 4번 출구에서 도보 약
-                                        5분 거리
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="bl_square mb15"><span class="bl gray_bg">&nbsp;</span>버스 이용시
-                                <ul class="mt10">
-                                    <li class="bl_sm_circle"><span class="bl gray_bg">&nbsp;</span>상계동주유소 : 1139, 1140,
-                                        1143 </li>
-                                    <li class="bl_sm_circle"><span class="bl gray_bg">&nbsp;</span>상계역 : 1140, 1142,
-                                        1224 </li>
-                                    <li class="bl_sm_circle"><span class="bl gray_bg">&nbsp;</span>상계중앙시장 입구 : 1137,
-                                        1138, 1142, 노원05</li>
-                                </ul>
-                            </li>
+                        <div class="sign_wrap">
+                            <h3 class="tit center">아이디 찾기 / 비밀번호 재설정</h3>
+                            <p class="basic_txt center mb30">아이디 또는 비밀번호가 생각나지 않으세요?<br />원하시는 방법을 선택하세요.</p>
+                            <ul class="member_tab">
+                                <li><a href="javascript://" class="active">아이디 찾기</a></li>
+                                <li><a href="javascript://" class="">비밀번호 재설정</a></li>
+                            </ul>
+                            <div class="mt30">
+                                <!-- 아이디 찾기 -->
+                                <div>
+                                    <!-- 찾기전 -->
+                                    <div>
+                                        <table class="sign_member sign_member2 mb17">
+                                            <caption></caption>
+                                            <colgroup>
+                                                <col style="width:20%">
+                                                <col>
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th>이름 <span class="red">*</span></th>
+                                                    <td><input type="text" value="" class="login_input wid400 "> </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>생년월일 <span class="red">*</span></th>
+                                                    <td><input type="text" value="" class="login_input wid400 ">
+                                                        <hr class="mblock">
+                                                        <p class="basic_txt mt5">※ 가입시 등록한 생년월일을 입력하십시오</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p class="center mb30">
+                                            <button type="button" class="btn_org">확인</button>
+                                        </p>
+                                    </div>
+
+                                    <!-- 찾기 후 -->
+                                    <div>
+                                        <p class="big_txt center">아이디 찾기 결과</p>
+                                        <p class="basic_txt center mb20">로그인하시고 노원수학문화관의 다양한 서비스를 이용해보세요.</p>
+                                        <p class="middle_txt center mb50">아이디: hong@gmail.com</p>
+                                        <p class="center mb30">
+                                            <button type="button" class="btn_org">로그인</button>
+                                            <button type="button" class="btn_white">비밀번호 재설정</button>
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- 비밀번호 재설정 -->
+                                <div style="display:none;">
+                                    <table class="sign_member mb17">
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col style="width:20%">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>아이디 <span class="red">*</span></th>
+                                                <td>
+                                                    <input type="text" value="" class="login_input wid400 ">
+                                                    <hr class="mblock">
+                                                    <button type="button" class="tbtn_blue ml10 wid100">인증번호 전송</button>
+                                                    <hr class="mblock">
+                                                    <p class="basic_txt mt5">※ 가입시 등록한 이메일(아이디)로 전송된 인증번호를 입력하십시오. </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>인증번호 <span class="red">*</span></th>
+                                                <td>
+                                                    <input type="text" value="" class="login_input wid400 "
+                                                        placeholder="인증번호 입력">
+                                                    <hr class="mblock">
+                                                    <button type="button" class="tbtn_blue ml10 wid100">인증번호 확인</button>
+                                                    <hr class="mblock">
+                                                    <p class="basic_txt mt5">※ 입력하신 이메일로 인증번호를 발송된 인증번호를 입력하십시오. </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>새 비밀번호 </th>
+                                                <td>
+                                                    <input type="text" value="" class="login_input wid400 ">
+                                                    <hr class="mblock">
+                                                    <p class="warning red bold mt5">* 비밀번호 조건을 확인해 주십시오. </p>
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>새 비밀번호 확인 </th>
+                                                <td>
+                                                    <input type="text" value="" class="login_input wid400 ">
+                                                    <hr class="mblock">
+                                                    <p class="warning red bold mt5">* 비밀번호가 일치하지 않습니다. </p>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+
+                                    <p class="center mb30">
+                                        <button type="button" class="btn_org">비밀번호 재설정</button>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!-- 로고 -->
+            <div class="family_wrap">
+                <div class="wsize">
+                    <div class="msize">
+                        <ul class="family">
+                            <li><img src="../img/foot_ico_1.jpg" alt=""></li>
+                            <li><img src="../img/foot_ico_2.jpg" alt=""></li>
+                            <li><img src="../img/foot_ico_3.jpg" alt=""></li>
+                            <li><img src="../img/foot_ico_4.jpg" alt=""></li>
+                            <li><img src="../img/foot_ico_5.jpg" alt=""></li>
+                            <li><img src="../img/foot_ico_6.jpg" alt=""></li>
                         </ul>
                     </div>
-
-
                 </div>
             </div>
         </div>
-        <!-- 로고 -->
-        <div class="family_wrap">
+        <div id="footer_wrap">
             <div class="wsize">
                 <div class="msize">
-                    <ul class="family">
-                        <li><img src="../img/foot_ico_1.jpg" alt=""></li>
-                        <li><img src="../img/foot_ico_2.jpg" alt=""></li>
-                        <li><img src="../img/foot_ico_3.jpg" alt=""></li>
-                        <li><img src="../img/foot_ico_4.jpg" alt=""></li>
-                        <li><img src="../img/foot_ico_5.jpg" alt=""></li>
-                        <li><img src="../img/foot_ico_6.jpg" alt=""></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="footer_wrap">
-        <div class="wsize">
-            <div class="msize">
-                <h2 class="foot_logo"><a href="#"><img src="../img/foot_logo.png" alt=""></a></h2>
-                <div class="foots">
-                    <p class="mb10">
-                        <a href="#">이용약관</a>
-                        <span>|</span>
-                        <a href="javascript://" class="jQPop_private1">개인정보처리방침</a>
-                        <span>|</span>
-                        <a href="javascript://" class="jQPop_private2">이메일무단수신거부</a>
+                    <h2 class="foot_logo"><a href="#"><img src="../img/foot_logo.png" alt=""></a></h2>
+                    <div class="foots">
+                        <p class="mb10">
+                            <a href="#">이용약관</a>
+                            <span>|</span>
+                            <a href="javascript://" class="jQPop_private1">개인정보처리방침</a>
+                            <span>|</span>
+                            <a href="javascript://" class="jQPop_private2">이메일무단수신거부</a>
+                        </p>
+                        <p class="address mb10">서울시 노원구 중계동 453-10 TEL 02 - 2116 - 2181 FAX 02-2116-4869</p>
+                        <p class="copy">Copyright © 2018. NOWON Mathmatics Culture Center All Rights Reserved.</p>
+                    </div>
+                    <p class="sns">
+                        <a href="#"><img src="../img/foot_blog.png" alt=""></a>
+                        <a href="#"><img src="../img/foot_facebook.png" alt=""></a>
                     </p>
-                    <p class="address mb10">서울시 노원구 중계동 453-10 TEL 02 - 2116 - 2181 FAX 02-2116-4869</p>
-                    <p class="copy">Copyright © 2018. NOWON Mathmatics Culture Center All Rights Reserved.</p>
+                    <p id="back-top" class="btnTop"><a href="javascript://"><img src="../img/common/ico_top.gif"
+                                alt="top"></a></p>
                 </div>
-                <p class="sns">
-                    <a href="#"><img src="../img/foot_blog.png" alt=""></a>
-                    <a href="#"><img src="../img/foot_facebook.png" alt=""></a>
-                </p>
-                <p id="back-top" class="btnTop"><a href="javascript://"><img src="../img/common/ico_top.gif"
-                            alt="top"></a></p>
             </div>
         </div>
-    </div>
     </div> <!-- widsize -->
 
 
