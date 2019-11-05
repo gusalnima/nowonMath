@@ -771,7 +771,6 @@ input[type=radio].chk:checked + label.la { background-position: 0 bottom; } */
 
 .pop_gall_sangse { width:800px; }
 
-.jQMenu_close { position:fixed; right:10px; top:50px; z-index:999; display:none; }
 .black_bg { position:fixed; background: #3f3f3f; left:0; top:0; z-index:999; display:none; }
 .ly_pop_bg { position:fixed; background: #000; opacity: 0.85; filter: alpha(opacity=85); left:0; top:0; z-index:999; display:none; }
 

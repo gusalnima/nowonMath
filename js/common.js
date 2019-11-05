@@ -355,16 +355,6 @@ function columResize() {
         });
     });
 
-    //web 전체메뉴
-    jQuery('.jQMenu').click(function() {
-      var _this = jQuery('.all_menu_wrap');
-      menu_on(_this);
-    });
-    jQuery('.jQMenu_close').click(function() {
-      var _this = jQuery('.all_menu_wrap');
-      menu_close(_this);
-    });
-
     jQuery('.share a').click(function() {
       jQuery('.share_on').addClass('active');
     });
@@ -416,16 +406,4 @@ function ly_on(_this) {
   _this.css({ display: 'block' });
   jQuery('.ly_pop_bg').css({ display: 'block' });
 }
-//전체메뉴
-function menu_on(_this) {
-  var _this = _this;
-  _this.css({ display: 'block' });
-  jQuery('.black_bg').css({ display: 'block' });
-  jQuery('.jQMenu_close').css({ display: 'block' });
-}
-function menu_close(_this) {
-  var _this = _this;
-  _this.css({ display: 'none' });
-  jQuery('.black_bg').css({ display: 'none' });
-  jQuery('.jQMenu_close').css({ display: 'none' });
-}
+
