@@ -63,7 +63,7 @@
 .recom_cont .recom_box { padding-top:0; padding-left:inherit; }
 .recom_cont .recom_box .txts { padding:9px 17px; height:inherit; }
 .recom_cont .recom_box .t1 { font-size:14px; font-family: 'nanumsquareb'; margin-bottom:12px; color:#000; }
-.recom_cont .recom_box .t2 { font-size:13px; font-family: 'gulim'; line-height:1.5em; }
+.recom_cont .recom_box .t2 { font-size:13px; font-family: 'gulim'; line-height:1.5em; height:56px; overflow:hidden; }
 .recom_cont .bx-wrapper {  width:100%;}
 .recom_cont .bx-pager.bx-default-pager, .recom_cont .bx-controls-auto { display:none; }
 .recom_cont .bx-prev { position:absolute; left:30px; top:50%; background:url(../img/ico_banner_arr.png) no-repeat left top; width:14px; height:30px; text-indent: -10000px;
@@ -108,7 +108,7 @@
 .notice_list .t1 { font-size:16px; color:#000; margin-bottom: 5px; }
 .notice_list .t2 { font-size:16px; color:#363535; line-height:1.5em; max-height:50px; overflow:hidden; }
 
-.calendar_tit { background:url(../img/img_cal_bg.gif) no-repeat left top; position:relative; background-size:100%; }
+.calendar_tit { background:url(../img/img_cal_bg.gif) no-repeat left top; position:relative; background-size:100% 100%; }
 .calendar_tit .tit { color:#fff; font-size:20px; font-weight:bold; padding:16px; }
 .calendar_tit .year { color:#fff; font-size:20px; font-weight:bold; position:absolute; left:inherit; top:16px; right:33%; }
 .calendar_tit .month { color:#fff; font-size:20px; font-weight:bold; position:absolute; left:inherit; top:16px; right:10%; }
